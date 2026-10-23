@@ -1,5 +1,7 @@
 # Research Notes
 
+Annotated, source-checked index: [research/prior-art-index.md](research/prior-art-index.md).
+
 ## Laude (Cornell)
 Three-layer auditable AI civic system: AI assistants for individuals, AI moderators for groups, independent cryptographic auditor. Trust infrastructure, not better moderation.
 
