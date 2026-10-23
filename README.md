@@ -27,6 +27,7 @@ Three primitives:
 - [Primitives](primitives.md)
 - [Civic Contract Sketch](docs/civic-contract-sketch.md)
 - [Research Notes](docs/research-notes.md)
+- [Agents: ground rules](agents.md)
 - [Slide Deck Outline](docs/slide-deck-outline.md) (organism metaphor and cascade for deeper exploration)
 
 Start small. One node. One table. One honest record.

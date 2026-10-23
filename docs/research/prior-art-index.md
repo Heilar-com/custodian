@@ -9,10 +9,13 @@ How to read each entry:
 
 Status markers: **Verified** / **Partly verified** / **Not verified**.
 
+Verification tiers follow [docs/graph-schema.md](../graph-schema.md). A tier describes the kind of source, not whether it is right.
+
 ---
 
 ## 1. Audrey Tang and Caroline Green: Civic AI and the 6-Pack of Care
 **Status:** Verified (framework and authorship); the vTaiwan lineage is a statement the authors make.
+**Verification tier (primary source):** institutional-report (Oxford Institute for Ethics in AI pages). civic.ai and its podcast: creator-content.
 
 - **What they built or studied.** Confirmed: "Civic AI — 6-Pack of Care" is a research project by Audrey Tang and Caroline Green at the Oxford Institute for Ethics in AI (Accelerator Fellowship Programme). The six packs are Attentiveness, Responsibility, Competence, Responsiveness, Solidarity and Symbiosis. civic.ai describes the goal as AI "that the people it affects can check, correct and switch off". Packs 1–4 follow the four phases of care set out by Fisher and Tronto (1990). Self-description: the site says a book is due from Wiley in February 2027 and that the framework was presented at Rhodes House, Oxford, on 25 March 2026.
 - **Lineage.** Self-description: the Oxford article says the framework builds "on real-world precedents such as the vTaiwan platform" and on the ⿻ Plurality vision.
@@ -22,6 +25,7 @@ Status markers: **Verified** / **Partly verified** / **Not verified**.
 
 ## 2. Cornell team, Laude Institute Moonshot: "Rebuilding Trust in Civic Discourse: An Auditable AI-Mediated Infrastructure"
 **Status:** Verified (grant and amounts, via the Laude page and Cornell Chronicle in the landscape brief).
+**Verification tier (primary source):** institutional-report (Laude Institute page, Cornell Chronicle). The project is a proposal; no peer-reviewed output found.
 
 - **What they built or studied.** Confirmed: the Cornell team (PI Jon Kleinberg, with Bazarova, Danescu-Niculescu-Mizil, R. Kleinberg, Naaman and Rand) received a **$250,000 seed** from the Laude Institute and is competing for **$10M**. It is one of 8 seeds. The project is a *proposal*. It has three layers: AI assistants for individuals, AI moderators for groups, and an independent AI auditing layer that produces "a transparent record of each agent's interventions". It also has an adversarial track for stress-testing. No code was found.
 - **Strongest overlap with Custodian.** An audit trail as trust infrastructure. The difference: Cornell audits AI agents against their declared roles, while Custodian keeps a record of human speech and of the research it cites.
@@ -30,6 +34,7 @@ Status markers: **Verified** / **Partly verified** / **Not verified**.
 
 ## 3. ZKorum / Agora Citizen Network
 **Status:** Partly verified (licence, repo, funders and audit code confirmed; ZK identity and AT Protocol DDS are self-description).
+**Verification tier (primary source):** creator-content (zkorum GitHub repos, agoracitizen.network). NGI TrustChain page: institutional-report.
 
 - **What they built.** Confirmed: an open-source monorepo, `zkorum/agora`, licensed AGPL-3.0, maintained by ZKorum (Paris) and very active (HEAD `98edd28`, 2026-10-21). Funding comes from EU Horizon Europe through NGI TrustChain and NGI Sargasso. Self-description: zero-knowledge proofs of eligibility (for example ZK passport proofs), Polis-style opinion clustering and bridging ranking, and a planned move to the Decentralized Deliberation Standard (DDS) on AT Protocol with "tamper-evident verification".
 - **Code findings (landscape brief, 2026-10-23).** From 2025-01 to 2026-02 the API published a proof of 8 write actions to a Nostr channel. **Moderation endpoints were never covered.** The watchdog witness never verified or stored proofs and has been dormant since 2025-03. The broadcast was removed in commit `d968353` (2026-02-22) because "the project is moving to DDS". Moderation today is ordinary mutable Postgres rows, and deletion is soft-delete followed by hard delete. Conclusion: there is no working verifiable-moderation feature to layer on.
@@ -39,6 +44,7 @@ Status markers: **Verified** / **Partly verified** / **Not verified**.
 
 ## 4. Pol.is / Computational Democracy Project
 **Status:** Verified (licence, method, vTaiwan Uber case); funder not verified.
+**Verification tier (primary source):** creator-content (pol.is, GitHub, pol.is blog). CrowdLaw case study: institutional-report.
 
 - **What they built.** Confirmed: open-source software (AGPL-3.0, `compdemocracy/polis`). Participants agree, disagree or pass on short statements and cannot reply to each other directly. The software clusters opinion groups and shows consensus statements next to divisive ones.
 - **vTaiwan Uber case (August 2015).** Confirmed: it was the first vTaiwan process to use Pol.is. There were 4 weeks of survey, 31,115 votes, 925 survey voters and 145 statements. A live-streamed two-hour meeting followed on 2015-08-27 with 1,875 online participants. Afterwards Uber committed to sharing its insurance policy and to having drivers registered (Audrey Tang's account on the pol.is blog; the CrowdLaw case study). Self-description (Co-Intelligence Institute): statements with more than 80% consensus set the agenda.
@@ -48,6 +54,7 @@ Status markers: **Verified** / **Partly verified** / **Not verified**.
 
 ## 5. Bak-Coleman, West, O'Connor, Bergstrom (2026): "Industry Influence in High-Profile Social Media Research"
 **Status:** Verified.
+**Verification tier (primary source):** preprint (arXiv:2601.11507). No peer-reviewed version found.
 
 - **What they studied.** Confirmed (arXiv:2601.11507): 295 social media articles in Science, Nature, PNAS and their transfer journals. 49% [43–55%] have disclosable ties to Meta, X, Google or Microsoft (funding, collaboration or employment), and fewer than half of those disclose them. 42% of papers that declared "no competing interests" still had ties. Industry-tied work receives roughly twice the attention. Ties are concentrated in few people (Gini 0.919). About 35% of papers with an academic editor were handled by an editor with ties. The estimated share of papers with industry involvement across production and review is 79.9%. The authors call their figures a conservative lower bound.
 - **Strongest overlap with Custodian.** It is a working example of incentive transparency: OpenAlex funding data joined to papers. That is the method Custodian's research mirror proposes.
@@ -56,6 +63,7 @@ Status markers: **Verified** / **Partly verified** / **Not verified**.
 
 ## 6. Briggs, Mellon, Arel-Bundock (2026): "It must be very hard to publish null results"
 **Status:** Verified.
+**Verification tier (primary source):** preprint (SocArXiv/OSF). I4R Discussion Paper: institutional-report.
 
 - **What they studied.** Confirmed: 101,475 articles from 156 political science journals, 2010–2024, extracted with large language models and validated. Main text: "94% of abstracts explicitly report a non-null result". Only 2% report only a null result. A calibrated model estimates that significant results are "one to two orders of magnitude" (10–100×) more likely to enter the published record. Pre-registration and randomised experiments are associated with more nulls being accepted. The abstract itself says "over 90%". Preprint on SocArXiv/OSF (v2, 2026-05-08) and I4R Discussion Paper 281.
 - **Strongest overlap with Custodian.** Suppressed nulls are a kind of integrity gap the mirror is meant to show: what the published record leaves out.
@@ -64,6 +72,7 @@ Status markers: **Verified** / **Partly verified** / **Not verified**.
 
 ## 7. David Shapiro: post-labour economics
 **Status:** Partly verified (the framework exists and is his; the link to Custodian is our own notes).
+**Verification tier (primary source):** creator-content (Substack, Medium).
 
 - **What he built or studied.** Self-description: an economic framework for a world where automation makes human labour non-essential. It proposes broad ownership (for example sovereign wealth funds and baby bonds), transparent governance and income that does not depend on jobs. Not verified: the "post-labour vs communism" comparison in research-notes.md. No primary source was found for that framing.
 - **Strongest overlap with Custodian.** Incentive structures: who gains when a finding holds. This is conceptual background, not prior art for tooling.
@@ -72,6 +81,7 @@ Status markers: **Verified** / **Partly verified** / **Not verified**.
 
 ## 8. President Halla Tómasdóttir / Samtalið, 2026-10-10 (seed trigger)
 **Status:** Partly verified. **The 80% figure is not verified.**
+**Verification tier (primary source):** news-outlet (Vísir, RÚV). School pages (fss.is, mk.is): institutional-report.
 
 - **What happened.** Confirmed: on Saturday 2026-10-10, 14:00–17:00, a national dialogue ("Tölum saman") was held at the initiative of President Halla Tómasdóttir, who is its patron. It was run by Samtal, félag til almannaheilla, with young people leading the tables and people of all ages taking part. It took place at 23 sites, according to Vísir. The question was "Hvernig samfélag viljum við skapa saman?" Each table wrote one summary sentence per topic, and the sentence "does not have to mean everyone at the table agreed". Results were presented at Harpa on 2026-10-11, 40 years after the Höfði summit. The most-discussed topics were AI, social media, education and society. Confirmed (Vísir): AI was used to summarise the results across sites, and participants asked for more such dialogues.
 - **Not verified:** "80% of participants wanted it again". No primary source found. Vísir reports a stated wish to repeat the event, with no percentage. Also not verified: "thousands of people" (manifesto), the board and data policy, and whether there will be a 2027 edition.
