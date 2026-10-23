@@ -2,7 +2,7 @@
 
 A civic information layer: raw-capture discourse, preserved disagreement, and an incentive-transparent research mirror. Independent nodes provide audit trails so coherence issues in research and claims stay visible rather than quietly resolved.
 
-**Status**: Thinking artifact / manifesto + contract spine. No production code yet. Exploring the full organism — connections still arising from incomplete data. Metaphoric language (organism, cascade) lives in the slide deck; the entry stays clinical.
+**Status**: Thinking artifact / manifesto + contract spine. No production code yet. Connections are still arising from incomplete data. Metaphoric language (organism, cascade) lives in the slide deck; the entry stays clinical.
 
 ## Core idea
 
