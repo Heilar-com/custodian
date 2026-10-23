@@ -5,7 +5,7 @@ This sketches a civic extension of the VitNet-style contract spine for public di
 ## Core Principles
 - Raw capture with explicit consent (ephemeral options, encrypted at edge).
 - Aggregated anonymized signal only leaves the room.
-- Electronic ID or ZK proofs as join key for longitudinal view without full identity exposure.
+- Revocable per-proposal join keys: a fresh time-boxed credential for each pairing, consent for each proposal, dissolved after the session.
 - Opt-in public layers for civic courage.
 - Percentage-based resource/attention allocation, not binary votes.
 - Self-care floors for nodes.
@@ -29,9 +29,9 @@ This sketches a civic extension of the VitNet-style contract spine for public di
 Sources: RFC 6962 / RFC 9162 (Certificate Transparency), C2SP tlog-checkpoint and tlog-witness, EDPB Guidelines 02/2025, GDPR Art 9 and Art 17.
 
 ## Principal Kinds
-- `citizen`: Longitudinal across contexts via join key.
+- `citizen`: Linked across rooms only by a revocable per-proposal key, dissolved after the session.
 - `table`: Scoped session with present persons.
 - `node`: Independent custodian unit with floor resources.
 - `network`: Cooperative but non-controlling federation.
 
-Privacy model evolves from per-org/per-talk to per-citizen with controlled longitudinal correlation.
+Pairings use a fresh time-boxed credential, with consent for each proposal, dissolved after the session. Open question: recognising someone across rooms is pseudonymous while the link is live.

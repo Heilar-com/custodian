@@ -29,11 +29,11 @@ Whole system as living organism. Integrity gaps in research as cascading coheren
 - Political science abstracts: 94% non-null; ~2% null-only (nulls suppressed 10-100x).
 Trace affiliations: funders → authors → citations → media → politicians. Incentive transparency exposes motives.
 
-## Slide 6: Political Knowledge Network Layer
-Congressional / parliamentary transcripts as knowledge graph.
-- Logical fallacy detection (DISPUTool 3.0 / RAG approaches on ElecDeb60to20).
-- Historical truthfulness scores (PolitiFact-style over time).
-- Trust metrics linked to past accuracy and use of verified vs integrity-compromised sources.
+## Slide 6: High-reach participant class
+Politicians are a high-reach participant class with an asymmetric cost of words. Congressional / parliamentary transcripts run through the same integrity database as every other claim.
+- Logical fallacy detection (DISPUTool 3.0 / RAG approaches on ElecDeb60to20) produces challengeable per-claim flags.
+- Speaker truthfulness scores are computed on demand from those flags, erasable with an end date, and never stored permanently.
+- Use of verified and integrity-compromised sources is read on demand from the same challengeable per-claim flags.
 Accountability: flag claims rooted in research with integrity gaps or high fallacy density.
 
 ## Slide 7: Cascade of Coherence Issues
@@ -43,7 +43,7 @@ Collective discourse with accumulating unresolved contradictions; dark regions s
 
 ## Slide 8: Public Discourse Engine
 Connects raw capture to the knowledge network.
-Flags statements based on research with integrity gaps or high-fallacy speakers.
+Flags statements based on research with integrity gaps, using challengeable per-claim fallacy flags. A speaker-level reading is computed on demand from those flags, erasable with an end date, and never stored permanently.
 Aggregates discourse maps preserving disagreement and dark regions.
 Tamper-evident audit of what was recorded and erased (not a proof of neutrality).
 Informs public: “this claim rests on research with undisclosed industry ties.”
@@ -58,12 +58,12 @@ VitNet-style contract spine for civic ops.
 ```mermaid
 graph TD
   Research[Research Layer<br/>Integrity gaps = coherence issues] --> Media[Media]
-  Media --> Politics[Political Layer<br/>Transcripts + Fallacy/Trust scores]
-  Politics --> Discourse[Public Discourse Engine<br/>Raw capture + Maps]
+  Media --> Discourse[Public Discourse Engine<br/>One integrity database<br/>Raw capture + Maps]
+  Politicians[Politicians: high-reach class<br/>Asymmetric cost of words<br/>Scores on demand from per-claim flags<br/>Erasable, with an end date] --> Discourse
   Discourse --> Education[Education / Schools]
   Education --> Echo[Echo Chambers<br/>Membrane bubbles]
   Audit[Audit Trails / Custodian Nodes<br/>Verification layer] -.-> Research
-  Audit -.-> Politics
+  Audit -.-> Politicians
   Audit -.-> Discourse
 ```
 
