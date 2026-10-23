@@ -45,7 +45,7 @@ Collective discourse with accumulating unresolved contradictions; dark regions s
 Connects raw capture to the knowledge network.
 Flags statements based on research with integrity gaps or high-fallacy speakers.
 Aggregates discourse maps preserving disagreement and dark regions.
-Cryptographic audit of neutrality and non-deletion.
+Tamper-evident audit of what was recorded and erased (not a proof of neutrality).
 Informs public: “this claim rests on research with undisclosed industry ties.”
 
 ## Slide 9: Network of Independent Custodian Nodes
