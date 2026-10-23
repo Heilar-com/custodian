@@ -1,0 +1,548 @@
+# Custodian graph: seed data
+#
+# Follows docs/graph-schema.md. This file is data only; nothing reads it yet.
+# Seeded 2026-10-23 from docs/research/prior-art-index.md (checked 2026-10-23)
+# and the non-deletion decision in docs/civic-contract-sketch.md.
+#
+# Conventions used here, to be confirmed or changed by a later decision:
+# - verification_status on nodes that are not sources: `self-description`
+#   (the project's own statement about itself), per the schema's marker set.
+# - A claim with no supporting source has verification_tier `n/a` and
+#   verification_status `not-verified`, and no incoming `supports` edge.
+# - axiom-candidate is never written by hand. No node here carries that type;
+#   a script recomputes it from `supports` edges and tiers.
+# - Where a tension involves more than two nodes, each side points at the
+#   `conflict` node with a `cites` edge. The schema has no dedicated edge for
+#   this yet; that gap is itself recorded below (cnf:conflict-edge-type).
+# - Nothing here is per-speaker data, so every node has retention `permanent`.
+
+provenance_default: &agent "agent: Claude Fable 5.1 (claude-fable-5-1), seeded from docs/research/prior-art-index.md and docs/civic-contract-sketch.md; pending review by Markús"
+
+nodes:
+
+  # ---- primitives --------------------------------------------------------
+
+  - id: prm:verifiability
+    type: primitive
+    label: "Verifiability: a claim tied to a reachable source, a rerunnable method, a timestamp and who stood behind it. An audit trail, not truth."
+    created: 2026-10-23
+    provenance: "Markús, primitives.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: prm:disagreement-preserved
+    type: primitive
+    label: "Disagreement preserved: contradicting sources stay visible with provenance. The reader weighs; the system does not resolve."
+    created: 2026-10-23
+    provenance: "Markús, primitives.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: prm:incentive-transparency
+    type: primitive
+    label: "Incentive transparency: not only who funded a finding, but what the funder gains if it holds."
+    created: 2026-10-23
+    provenance: "Markús, primitives.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  # ---- sources (prior-art index, entries 1 to 8) ---------------------------
+
+  - id: src:oxford-civic-ai-6pack
+    type: source
+    label: "Tang and Green, Civic AI and the 6-Pack of Care, Oxford Institute for Ethics in AI (index entry 1)"
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://afp.oxford-aiethics.ox.ac.uk/civic-ai
+      - https://afp.oxford-aiethics.ox.ac.uk/article/civic-ai-and-6-pack-care-reimagining-ai-alignment-relational-health
+      - https://civic.ai/
+    retention: permanent
+
+  - id: src:laude-cornell-moonshot
+    type: source
+    label: "Laude Institute Moonshot page and Cornell Chronicle: Rebuilding Trust in Civic Discourse, Cornell team, $250k seed (index entry 2)"
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.laude.org/moonshots/one/rebuilding-trust-civic-discourse
+      - https://news.cornell.edu/stories/2026/04/moonshot-project-aims-restore-trust-digital-public-sphere
+    retention: permanent
+
+  - id: src:zkorum-agora
+    type: source
+    label: "ZKorum, Agora Citizen Network: AGPL-3.0 monorepo and project site (index entry 3). Licence, funders and audit code confirmed; ZK identity and DDS are self-description."
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    links:
+      - https://github.com/zkorum/agora
+      - https://github.com/zkorum/agora/commit/d968353d5f1f34ae50f57a7392d078e251a3dc17
+      - https://github.com/zkorum/watchdog
+      - https://www.agoracitizen.network/
+    retention: permanent
+
+  - id: src:polis
+    type: source
+    label: "Computational Democracy Project, Pol.is: software, method and vTaiwan Uber case (index entry 4)"
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: creator-content
+    verification_status: confirmed
+    links:
+      - https://pol.is/
+      - https://github.com/compdemocracy/polis
+      - https://blog.pol.is/uber-responds-to-vtaiwans-coherent-blended-volition-3e9b75102b9b
+      - https://congress.crowd.law/files/vtaiwan-case-study.pdf
+    retention: permanent
+
+  - id: src:arxiv-2601.11507
+    type: source
+    label: "Bak-Coleman, West, O'Connor, Bergstrom (2026), Industry Influence in High-Profile Social Media Research, arXiv preprint (index entry 5)"
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: preprint
+    verification_status: confirmed
+    links:
+      - https://arxiv.org/abs/2601.11507
+    retention: permanent
+
+  - id: src:osf-zr5vf
+    type: source
+    label: "Briggs, Mellon, Arel-Bundock (2026), It must be very hard to publish null results, SocArXiv v2 and I4R DP 281 (index entry 6)"
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: preprint
+    verification_status: confirmed
+    links:
+      - https://osf.io/preprints/socarxiv/zr5vf_v2
+      - https://doi.org/10.31235/osf.io/zr5vf_v2
+      - https://www.econstor.eu/bitstream/10419/336819/1/I4R-DP281.pdf
+    retention: permanent
+
+  - id: src:shapiro-post-labor
+    type: source
+    label: "David Shapiro, post-labour economics manifesto and introduction (index entry 7)"
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    links:
+      - https://daveshap.substack.com/p/a-post-labor-economics-manifesto
+      - https://medium.com/@dave-shap/what-is-post-labor-economics-a-gentle-introduction-81aa265abbe0
+    retention: permanent
+
+  - id: src:visir-samtalid-2026-10
+    type: source
+    label: "Vísir report on Samtalið / Tölum saman, October 2026 (index entry 8)"
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: news-outlet
+    verification_status: confirmed
+    links:
+      - https://www.visir.is/g/20262946865d/upp-byggi-legra-sam-tal-en-i-at-huga-semdum
+    retention: permanent
+
+  - id: src:ruv-samtalid-2026-10
+    type: source
+    label: "RÚV coverage of Samtalið: invitation (2026-09-25) and results at Harpa (2026-10-11) (index entry 8)"
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: news-outlet
+    verification_status: confirmed
+    links:
+      - https://www.ruv.is/frettir/innlent/2026-10-11-i-beinni-nidurstodur-samtalsins-kynntar-489529
+      - https://www.ruv.is/frettir/innlent/2026-09-25-forseti-bydur-framhaldsskolanemum-til-samtals-488101
+    retention: permanent
+
+  - id: src:fss-samtalid-2026-10-10
+    type: source
+    label: "Fjölbrautaskóli Suðurnesja school page: Samtalið í FS 10. október (index entry 8)"
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.fss.is/is/skolinn-starfid/annad/frettir/samtalid-i-fs-10-oktober
+    retention: permanent
+
+  # ---- claims ---------------------------------------------------------------
+
+  - id: clm:industry-ties-49pct
+    type: claim
+    label: "About 49% (43 to 55%) of social media studies in Science, Nature, PNAS and transfer journals have disclosable ties to Meta, X, Google or Microsoft; fewer than half of those disclose them."
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: preprint
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:polisci-nulls-suppressed
+    type: claim
+    label: "94% of political science abstracts (156 journals, 2010 to 2024) report a non-null result; 2% report only a null result."
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: preprint
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:zkorum-no-verifiable-moderation
+    type: claim
+    label: "Agora's proof broadcast (2025-01 to 2026-02) never covered moderation endpoints, the watchdog never verified proofs, and the broadcast was removed on 2026-02-22. No working verifiable-moderation feature exists."
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: creator-content
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:samtalid-held-2026-10-10
+    type: claim
+    label: "A national dialogue (Tölum saman) was held on 2026-10-10 at 23 sites in Iceland at the initiative of President Halla Tómasdóttir, with results presented at Harpa on 2026-10-11."
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: news-outlet
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:samtalid-summary-method
+    type: claim
+    label: "At Samtalið each table wrote one summary sentence per topic, and AI was used to summarise results across sites."
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: news-outlet
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:samtalid-80pct-repeat
+    type: claim
+    label: "80% of Samtalið participants wanted the dialogue repeated. No primary source found; Vísir reports a wish to repeat with no percentage."
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: n/a
+    verification_status: not-verified
+    retention: permanent
+
+  - id: clm:paper-mill-citation-inflation
+    type: claim
+    label: "Suspected paper-mill articles receive 50 to 100% more citations despite fewer readers (attributed to a PNAS 2026 study on molecular cancer journals). No primary source located."
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+    verification_tier: n/a
+    verification_status: not-verified
+    retention: permanent
+
+  # ---- design items ---------------------------------------------------------
+
+  - id: dsn:open-mode
+    type: design-item
+    label: "Open mode: only people in the room speak; no agent interrupts; talk becomes the discourse map including dark regions."
+    created: 2026-10-23
+    provenance: "Markús, docs/meeting-modes.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:scoped-mode
+    type: design-item
+    label: "Scoped mode: the room picks one topic; an agent shows nearest supporting and contradicting research plus funding, under a symmetry rule (every side or nothing)."
+    created: 2026-10-23
+    provenance: "Markús, docs/meeting-modes.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:per-proposal-join-keys
+    type: design-item
+    label: "Per-proposal join keys: a fresh, time-boxed, consented credential for each cross-room pairing, dissolved after the session; no permanent link."
+    created: 2026-10-23
+    provenance: "Markús, docs/join-keys.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:behavioural-metadata
+    type: design-item
+    label: "Behavioural metadata: talk share, interruptions, narrow citations, repeated answered claims, fallacy patterns; metadata only, no in-meeting intervention."
+    created: 2026-10-23
+    provenance: "Markús, docs/behavioural-metadata.md"
+    status: disputed
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:challengeable-flags
+    type: design-item
+    label: "Challengeable flags: a detector flag is a claim with detector name, version, model and time; a dispute is its own linked claim; both stay visible."
+    created: 2026-10-23
+    provenance: "Markús, docs/challengeable-flags.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:on-demand-speaker-scores
+    type: design-item
+    label: "Speaker-level truthfulness or trust readings computed on demand from per-claim flags, erasable with an end date, never stored."
+    created: 2026-10-23
+    provenance: "Markús, docs/slide-deck-outline.md slides 6 and 8"
+    status: disputed
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:civic-erasure-crypto-shredding
+    type: design-item
+    label: "civic.erasure: raw speech lives in a deletable store; erasure destroys content and its keys or salts; a content-free erasure record stays in the log."
+    created: 2026-10-23
+    provenance: "Markús, docs/civic-contract-sketch.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:civic-audit-log
+    type: design-item
+    label: "civic.audit: tamper-evident, witnessed log of salted commitments to every captured input and erasure, with inclusion and consistency proofs; not a proof of completeness or neutrality."
+    created: 2026-10-23
+    provenance: "Markús, docs/civic-contract-sketch.md (RFC 6962 / RFC 9162, C2SP tlog)"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  # ---- decisions ------------------------------------------------------------
+
+  - id: dec:2026-10-23-non-deletion-scope
+    type: decision
+    label: "Non-deletion scope: 'never deleted' covers only logged entries (aggregate discourse map and content-free records). Raw speech is erasable by crypto-shredding and each erasure is logged. Commitments must be salted (128-bit or more) or keyed. Pilot order: Alþingi transcripts, then one adult table; no raw recording of minors."
+    created: 2026-10-23
+    provenance: "Markús, docs/civic-contract-sketch.md, section 'Non-deletion scope (decided 2026-10-23)'"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  # ---- conflicts (never resolved by the system) -----------------------------
+
+  - id: cnf:commitments-as-personal-data
+    type: conflict
+    label: "The decision keeps salted commitments permanently. EDPB Guidelines 02/2025 treat salted or keyed hashes as personal data, and whether a commitment stops being personal data once content and salt are destroyed is unsettled (EDPS v SRB, C-413/23 P). Legal, unverified."
+    created: 2026-10-23
+    provenance: "Markús, docs/civic-contract-sketch.md; recorded as a node by Claude Fable 5.1"
+    status: active
+    verification_tier: n/a
+    verification_status: not-verified
+    retention: permanent
+
+  - id: cnf:erasure-vs-audit-trail
+    type: conflict
+    label: "Verifiability wants a record of who stood behind a claim; the non-deletion decision makes raw speech erasable. The sketch's answer is a content-free erasure record in the log, which proves that something was removed but not what."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1, reading primitives.md against docs/civic-contract-sketch.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:speaker-level-scores
+    type: conflict
+    label: "Slides 6 and 8 keep on-demand speaker-level scores. docs/challengeable-flags.md asks whether any speaker-level score resolves disagreement on the reader's behalf, against the disagreement-preserved primitive and rule (c) in agents.md."
+    created: 2026-10-23
+    provenance: "Markús, docs/challengeable-flags.md open question; recorded as a node by Claude Fable 5.1"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:conflict-edge-type
+    type: conflict
+    label: "The schema says both sides of a multi-node tension 'point to' a conflict node but defines no edge type for that. This file uses `cites`. A decision should either add an edge type or confirm `cites`."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1, while seeding this file against docs/graph-schema.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+edges:
+
+  # sources support claims
+  - id: e:001
+    type: supports
+    from: src:arxiv-2601.11507
+    to: clm:industry-ties-49pct
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:002
+    type: supports
+    from: src:osf-zr5vf
+    to: clm:polisci-nulls-suppressed
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:003
+    type: supports
+    from: src:zkorum-agora
+    to: clm:zkorum-no-verifiable-moderation
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:004
+    type: supports
+    from: src:visir-samtalid-2026-10
+    to: clm:samtalid-held-2026-10-10
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:005
+    type: supports
+    from: src:ruv-samtalid-2026-10
+    to: clm:samtalid-held-2026-10-10
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:006
+    type: supports
+    from: src:fss-samtalid-2026-10-10
+    to: clm:samtalid-held-2026-10-10
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:007
+    type: supports
+    from: src:visir-samtalid-2026-10
+    to: clm:samtalid-summary-method
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+
+  # findings the repo reads as grounds for its primitives (repo inference)
+  - id: e:008
+    type: supports
+    from: clm:industry-ties-49pct
+    to: prm:incentive-transparency
+    created: 2026-10-23
+    provenance: "Markús, docs/research-notes.md ('the published record is actively shaped'); edge drawn by Claude Fable 5.1"
+    status: active
+  - id: e:009
+    type: supports
+    from: clm:polisci-nulls-suppressed
+    to: prm:disagreement-preserved
+    created: 2026-10-23
+    provenance: "Markús, docs/research-notes.md; edge drawn by Claude Fable 5.1"
+    status: active
+
+  # design lineage
+  - id: e:010
+    type: derives-from
+    from: dsn:challengeable-flags
+    to: prm:disagreement-preserved
+    created: 2026-10-23
+    provenance: "Markús, docs/challengeable-flags.md ('extends the primitive')"
+    status: active
+  - id: e:011
+    type: derives-from
+    from: dsn:on-demand-speaker-scores
+    to: dsn:challengeable-flags
+    created: 2026-10-23
+    provenance: "Markús, docs/slide-deck-outline.md slide 6 ('computed on demand from those flags')"
+    status: active
+
+  # the decision and what pulls against it
+  - id: e:012
+    type: contradicts
+    from: dsn:behavioural-metadata
+    to: dec:2026-10-23-non-deletion-scope
+    created: 2026-10-23
+    provenance: "Markús, docs/behavioural-metadata.md 'Unresolved': per-speaker behaviour on the permanent chain is not content-free"
+    status: active
+  - id: e:013
+    type: cites
+    from: dec:2026-10-23-non-deletion-scope
+    to: cnf:commitments-as-personal-data
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:014
+    type: cites
+    from: dsn:civic-audit-log
+    to: cnf:commitments-as-personal-data
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:015
+    type: cites
+    from: dec:2026-10-23-non-deletion-scope
+    to: cnf:erasure-vs-audit-trail
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:016
+    type: cites
+    from: prm:verifiability
+    to: cnf:erasure-vs-audit-trail
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:017
+    type: cites
+    from: dsn:civic-erasure-crypto-shredding
+    to: cnf:erasure-vs-audit-trail
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+
+  # speaker scores tension
+  - id: e:018
+    type: cites
+    from: dsn:on-demand-speaker-scores
+    to: cnf:speaker-level-scores
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:019
+    type: cites
+    from: dsn:challengeable-flags
+    to: cnf:speaker-level-scores
+    created: 2026-10-23
+    provenance: *agent
+    status: active
+  - id: e:020
+    type: cites
+    from: prm:disagreement-preserved
+    to: cnf:speaker-level-scores
+    created: 2026-10-23
+    provenance: *agent
+    status: active

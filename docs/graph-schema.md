@@ -1,6 +1,6 @@
 # Graph schema
 
-How Custodian records claims, sources, design items and decisions as a graph. This is a schema document only. No code implements it yet.
+How Custodian records claims, sources, design items and decisions as a graph. This is a schema document. Seed data following it lives in [graph/graph.yaml](../graph/graph.yaml). No code reads it yet.
 
 ## Node types
 
