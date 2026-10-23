@@ -41,3 +41,11 @@ Topics emerge from people talking. Research is the mirror that shows what those 
 - Open an issue or PR. Do not edit `main` directly. Markús merges.
 - Log every design decision as a `decision` node in the graph ([docs/graph-schema.md](docs/graph-schema.md)), with its tensions as `contradicts` edges or `conflict` nodes.
 - Separate confirmed findings from claims. Cite nothing you have not checked.
+
+## Experimental Posture
+
+There are no sacred cows. Every node, edge, primitive and design decision in this repo is a hypothesis until the data says otherwise.
+
+The project proposes the structure and shape of the discourse layer, and tries everything experimentally: run it, observe what comes out, keep what survives. Nothing is assumed to work out of the box.
+
+Decisions stay revisable nodes, and evidence that contradicts them is recorded as `contradicts` edges ([docs/graph-schema.md](docs/graph-schema.md)).
