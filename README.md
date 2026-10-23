@@ -20,6 +20,7 @@ Three primitives:
 - **Bridging**: system can propose productive pairings across rooms via revocable, consent-per-proposal join keys.
 - **Behavioral patterns**: fingerprints (talk ratios, claim repetition, narrow citations, high fallacy density) as metadata only. No in-meeting interruption. Flags are themselves challengeable.
 - **Seed path**: public named-speaker nodes (Congress / parliamentary transcripts) first for traction, then anonymous citizen tables. Podcasts as another named class.
+- **Voice**: used only for proof of consent and capture quality, never to label intent or character.
 
 ## Docs
 
@@ -27,6 +28,11 @@ Three primitives:
 - [Primitives](primitives.md)
 - [Civic Contract Sketch](docs/civic-contract-sketch.md)
 - [Research Notes](docs/research-notes.md)
+- [Meeting modes](docs/meeting-modes.md)
+- [Join keys](docs/join-keys.md)
+- [Behavioural metadata](docs/behavioural-metadata.md)
+- [Challengeable flags](docs/challengeable-flags.md)
+- [Participant classes and seed path](docs/participant-classes.md)
 - [Slide Deck Outline](docs/slide-deck-outline.md) (organism metaphor and cascade for deeper exploration)
 
 Start small. One node. One table. One honest record.
