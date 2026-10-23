@@ -1,5 +1,11 @@
 # The Custodian Manifesto
 
+This system is for aggregating what people are actually saying, hooking it into where the knowledge came from, why they might be speaking about it, and how misinformed the public might be. Then there is the angle of what the politicians are saying and what that is connected to. Then the news, its bias, and what it is connected to. That is the totality of the information layer that governs our collective unconscious and governs public discourse. It is a hive mind. Humanity can learn from this. This is the goal.
+
+A single node is one room. In a world where this is adopted and used often, there may be thousands of nodes, thousands of rooms. Each one is just a node, and they all funnel up anonymously into one big network that shows what people are talking about and want to talk about.
+
+This can inform research topics. Exposing the mismatch between what people care about and what the knowledge system produces is the reason the whole thing exists.
+
 Every society eventually asks the same question: what kind of world do we want, and who gets to decide? For most of history the answer came from whoever spoke loudest, held the most power, or controlled the narrative. Fallacies, hidden motives, selective facts — politics as performance.
 
 Iceland just ran an experiment that proved something important. On October 10, 2026, President Halla Tómasdóttir's initiative Samtalið brought thousands of people into schools across the country to ask one question: what kind of society do we want to create together? Eighty percent wanted it again. The appetite is real.
