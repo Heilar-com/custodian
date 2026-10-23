@@ -1,8 +1,10 @@
 # Custodian Organism Slide Deck Outline
 
+> Note: The organism metaphor (research integrity gaps as cascade, nodes as independent verification) is for deeper exploration and visual storytelling. Entry-level materials use clinical language: coherence, integrity gaps, incentive transparency, preserved disagreement.
+
 ## Slide 1: Title
 **The Custodian Organism: An Auditable Human Knowledge Network**
-Transparent discourse · Preserved dissent · Incentive transparency · Against infected information
+Transparent discourse · Preserved dissent · Incentive transparency · Against incoherent or integrity-compromised information
 
 ## Slide 2: Inception
 From Samtalið (Iceland Oct 10 2026, President Halla Tómasdóttir) and the manifesto:
@@ -19,9 +21,9 @@ AI’s job: prevent quiet deletion of true-shaped material, not decide truth.
 
 ## Slide 4: The Human Knowledge Network as Organism
 Layers of flow: Research → Media → Politics → Public Discourse → Education → Echo Chambers.
-Whole system as living organism. Infected research as cancer cells. Independent nodes as immune system.
+Whole system as living organism. Integrity gaps in research as cascading coherence issues. Independent nodes as verification and audit layer.
 
-## Slide 5: Research Layer – Paper Mills as Cancer
+## Slide 5: Research Layer – Integrity Gaps
 - ~49% of high-profile social media research has industry ties (majority undisclosed). arXiv:2601.11507.
 - Suspected paper-mill articles: 50-100% more citations despite fewer readers (PNAS 2026).
 - Political science abstracts: 94% non-null; ~2% null-only (nulls suppressed 10-100x).
@@ -31,17 +33,17 @@ Trace affiliations: funders → authors → citations → media → politicians.
 Congressional / parliamentary transcripts as knowledge graph.
 - Logical fallacy detection (DISPUTool 3.0 / RAG approaches on ElecDeb60to20).
 - Historical truthfulness scores (PolitiFact-style over time).
-- Trust metrics linked to past accuracy and use of verified vs infected sources.
-Accountability: flag claims rooted in cancer research or high fallacy density.
+- Trust metrics linked to past accuracy and use of verified vs integrity-compromised sources.
+Accountability: flag claims rooted in research with integrity gaps or high fallacy density.
 
-## Slide 7: Infection Cascade – Mind Virus / Collective Unconscious
-Flawed research (cancer) → media amplification → political speech → public discourse → schools/education → echo chambers (bubbles with interpretive membranes).
+## Slide 7: Cascade of Coherence Issues
+Integrity gaps in research → media amplification → political speech → public discourse → schools/education → echo chambers (bubbles with interpretive membranes).
 Like flawed AI agent factory cascading into more flawed agents.
-Collective unconscious infected; dark regions show where conversation doesn't go.
+Collective discourse with accumulating unresolved contradictions; dark regions show where conversation doesn't go.
 
 ## Slide 8: Public Discourse Engine
 Connects raw capture to the knowledge network.
-Flags statements based on infected research or high-fallacy speakers.
+Flags statements based on research with integrity gaps or high-fallacy speakers.
 Aggregates discourse maps preserving disagreement and dark regions.
 Cryptographic audit of neutrality and non-deletion.
 Informs public: “this claim rests on research with undisclosed industry ties.”
@@ -55,21 +57,21 @@ VitNet-style contract spine for civic ops.
 ## Slide 10: System Architecture (Mermaid)
 ```mermaid
 graph TD
-  Research[Research Layer<br/>Paper mills = cancer cells] --> Media[Media]
+  Research[Research Layer<br/>Integrity gaps = coherence issues] --> Media[Media]
   Media --> Politics[Political Layer<br/>Transcripts + Fallacy/Trust scores]
   Politics --> Discourse[Public Discourse Engine<br/>Raw capture + Maps]
   Discourse --> Education[Education / Schools]
   Education --> Echo[Echo Chambers<br/>Membrane bubbles]
-  Audit[Audit Trails / Custodian Nodes<br/>Immune system] -.-> Research
+  Audit[Audit Trails / Custodian Nodes<br/>Verification layer] -.-> Research
   Audit -.-> Politics
   Audit -.-> Discourse
 ```
 
 ## Slide 11: Book / Series Concept
-Visual organism maps, infection cascades, node forests.
+Visual organism maps, coherence cascades, node forests.
 Voice-first manifesto + conversations with the machine.
 Iceland niche + X de-slop with texture.
-Generated images for metaphors: cancer in knowledge graph, membrane bubbles, immune audit nodes, forest of nodes.
+Generated images for metaphors: cascading coherence issues in knowledge graph, membrane bubbles, audit nodes, forest of nodes.
 Expand manifesto into multi-chapter organism narrative.
 
 ## Slide 12: Next Steps
