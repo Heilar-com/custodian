@@ -90,4 +90,17 @@ Verification tiers follow [docs/graph-schema.md](../graph-schema.md). A tier des
 - **Sources.** https://www.visir.is/g/20262946865d/upp-byggi-legra-sam-tal-en-i-at-huga-semdum · https://www.ruv.is/frettir/innlent/2026-10-11-i-beinni-nidurstodur-samtalsins-kynntar-489529 · https://www.ruv.is/frettir/innlent/2026-09-25-forseti-bydur-framhaldsskolanemum-til-samtals-488101 · https://www.fss.is/is/skolinn-starfid/annad/frettir/samtalid-i-fs-10-oktober · https://www.mk.is/is/frettir/tolum-saman-um-framtidina
 
 ---
+
+## Research gaps: not yet indexed
+
+Named in [docs/book-outline.md](../book-outline.md) on 2026-10-23. Each is **Not verified** until a brief with primary sources replaces this line. They are recorded in the graph as claims with no supporting edge.
+
+- **Þjóðfundur 2009.** A national assembly of randomly selected citizens; participant count, selection method and what became of its output are unchecked.
+- **Stjórnlagaráð 2011 and the 2012 referendum.** A crowdsourced constitutional draft, an advisory referendum, no ratification by Alþingi. Process and reasons unchecked.
+- **Taiwan Join platform.** A signature threshold that obliges a government response. Threshold and mechanism unchecked.
+- **South Africa Truth and Reconciliation Commission.** Amnesty conditional on full disclosure. Mechanism and evidence on effects unchecked.
+- **Woozle effect.** Term for citation cascades from a single weak source. Origin and empirical work unchecked.
+- **Iceland post-2008 prosecutions.** The special prosecutor's office and its outcomes, as the counter-case to amnesty. Unchecked.
+
+---
 Not legal advice. Coverage gaps are listed per entry.

@@ -395,6 +395,137 @@ nodes:
     verification_status: self-description
     retention: permanent
 
+
+  - id: clm:thjodfundur-2009
+    type: claim
+    label: "Þjóðfundur 2009 gathered about 1,500 randomly selected citizens to set national values; its output did not bind any institution. Research gap, no source checked."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: not-verified
+    retention: permanent
+
+  - id: clm:stjornlagarad-2011-not-ratified
+    type: claim
+    label: "The 2011 Constitutional Council drafted a constitution from crowdsourced input; a 2012 advisory referendum approved it; Alþingi never ratified it. Research gap, no source checked."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: not-verified
+    retention: permanent
+
+  - id: clm:taiwan-join-response-obligation
+    type: claim
+    label: "Taiwan's Join platform obliges a government response once a proposal passes a signature threshold. Research gap, no source checked."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: not-verified
+    retention: permanent
+
+  - id: clm:trc-amnesty-for-disclosure
+    type: claim
+    label: "South Africa's Truth and Reconciliation Commission granted amnesty conditional on full disclosure of politically motivated acts. Research gap, no source checked."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: not-verified
+    retention: permanent
+
+  - id: clm:woozle-effect
+    type: claim
+    label: "The Woozle effect: repeated citation of a single weak source makes a claim appear well supported. Research gap, origin and evidence unchecked."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: not-verified
+    retention: permanent
+
+  - id: clm:iceland-post-2008-prosecutions
+    type: claim
+    label: "Iceland prosecuted and convicted senior bankers after 2008 through a special prosecutor, the counter-case to amnesty. Research gap, no source checked."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: not-verified
+    retention: permanent
+
+  - id: dsn:handoff-agenda-power
+    type: design-item
+    label: "Handoff: the discourse map holds agenda power, not decision power. It decides what must be answered, never what the answer is. Proposed, unbuilt."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:adversary-model
+    type: design-item
+    label: "Adversary model: flooding, fake tables, poisoning the research graph, node capture, detector gaming, and what the independence rule, minimum table size and node separation buy. Proposed, unwritten."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:self-applied-incentive-transparency
+    type: design-item
+    label: "The mirror applies incentive transparency to itself: funders of each node and the providers and trainers of any matching model are disclosed like any other tie. Proposed."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:inform-not-clean
+    type: conflict
+    label: "The manifesto speaks of 'how misinformed the public might be' and the book brief of cleaning up speech. Rule (c) in agents.md says the system never settles a disagreement. The mirror shows what a claim rests on; it does not rule the public wrong."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:transparency-without-amnesty
+    type: conflict
+    label: "Incentive transparency exposes undisclosed ties. If exposure leads to punishment, disclosure becomes costly and concealment grows, so the record degrades. Thesis of the book outline: transparency requires forgiveness or it produces concealment. Untested."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:matching-ai-as-undisclosed-tie
+    type: conflict
+    label: "Scoped mode and the research mirror rely on a matching model. Its trainer and funder are the largest tie in the system and are not covered by per-flag provenance alone."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:handoff-gap
+    type: conflict
+    label: "A discourse map has no force unless an institution is bound to answer it. Iceland 2011 is the recorded failure at this step (unverified); no Custodian design yet covers it."
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
 edges:
 
   # sources support claims
@@ -545,4 +676,104 @@ edges:
     to: cnf:speaker-level-scores
     created: 2026-10-23
     provenance: *agent
+    status: active
+
+  # proposals from the book outline (2026-10-23)
+  - id: e:021
+    type: derives-from
+    from: dsn:self-applied-incentive-transparency
+    to: prm:incentive-transparency
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:022
+    type: cites
+    from: dsn:scoped-mode
+    to: cnf:matching-ai-as-undisclosed-tie
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:023
+    type: cites
+    from: prm:incentive-transparency
+    to: cnf:matching-ai-as-undisclosed-tie
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:024
+    type: cites
+    from: dsn:self-applied-incentive-transparency
+    to: cnf:matching-ai-as-undisclosed-tie
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:025
+    type: cites
+    from: prm:incentive-transparency
+    to: cnf:transparency-without-amnesty
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:026
+    type: cites
+    from: clm:trc-amnesty-for-disclosure
+    to: cnf:transparency-without-amnesty
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:027
+    type: cites
+    from: clm:iceland-post-2008-prosecutions
+    to: cnf:transparency-without-amnesty
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:028
+    type: cites
+    from: prm:disagreement-preserved
+    to: cnf:inform-not-clean
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:029
+    type: cites
+    from: dsn:scoped-mode
+    to: cnf:inform-not-clean
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:030
+    type: cites
+    from: clm:stjornlagarad-2011-not-ratified
+    to: cnf:handoff-gap
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:031
+    type: cites
+    from: clm:taiwan-join-response-obligation
+    to: cnf:handoff-gap
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:032
+    type: cites
+    from: dsn:handoff-agenda-power
+    to: cnf:handoff-gap
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:033
+    type: derives-from
+    from: dsn:handoff-agenda-power
+    to: clm:taiwan-join-response-obligation
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+  - id: e:034
+    type: cites
+    from: clm:woozle-effect
+    to: prm:verifiability
+    created: 2026-10-23
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
     status: active
