@@ -40,7 +40,7 @@ Each needs a brief with primary sources and a verification marker in the prior-a
 - Þjóðfundur 2009: participants, selection method, what happened to its output.
 - Stjórnlagaráð 2011 and the 2012 advisory referendum: process, result, why Alþingi never ratified.
 - Taiwan Join platform: the signature threshold and the response obligation it triggers.
-- South Africa TRC: the amnesty-for-full-disclosure mechanism and what is known about its effects.
+- South Africa TRC: done, see prior-art index entry 9 (2026-10-24). The bargain is confirmed in law and court reasoning; the TRC's own report shows a narrow disclosure test let applicants hold back, and Gibson 2002 shows amnesty was accepted only alongside compensation, voice and apology.
 - Woozle effect: origin of the term and empirical work on citation cascades.
 - Iceland post-2008: the special prosecutor, convictions, and any evidence on disclosure effects.
 

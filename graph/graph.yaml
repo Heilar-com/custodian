@@ -428,12 +428,12 @@ nodes:
 
   - id: clm:trc-amnesty-for-disclosure
     type: claim
-    label: "South Africa's Truth and Reconciliation Commission granted amnesty conditional on full disclosure of politically motivated acts. Research gap, no source checked."
+    label: "South Africa's Amnesty Committee was bound (Act 34 of 1995, s 20(1)) to grant amnesty from criminal and civil liability for politically motivated acts of 1960 to 1994 if the applicant made full disclosure of all relevant facts. Upheld in AZAPO (1996)."
     created: 2026-10-23
-    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
     status: active
-    verification_tier: n/a
-    verification_status: not-verified
+    verification_tier: institutional-report
+    verification_status: confirmed
     retention: permanent
 
   - id: clm:woozle-effect
@@ -524,6 +524,109 @@ nodes:
     status: active
     verification_tier: n/a
     verification_status: self-description
+    retention: permanent
+
+
+  - id: src:za-act-34-1995
+    type: source
+    label: "Promotion of National Unity and Reconciliation Act 34 of 1995 (South Africa), s 20 (index entry 9)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://lawlibrary.org.za/akn/za/act/1995/34
+      - http://www.acts.co.za/promotion-of-national-unity-and-reconciliation-act-1995/20__granting_of_amnesty_and_ef
+    retention: permanent
+
+  - id: src:azapo-1996-zacc-16
+    type: source
+    label: "AZAPO and Others v President of the RSA, CCT 17/96, Constitutional Court, 25 July 1996, Mahomed DP (index entry 9)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://reparations.qub.ac.uk/assets/uploads/AZAPO.pdf
+    retention: permanent
+
+  - id: src:trc-final-report-vol6-s1
+    type: source
+    label: "TRC Final Report, Volume 6, Section 1: report of the Amnesty Committee (index entry 9)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://sahistory.org.za/sites/default/files/vol6_s1.pdf
+      - https://sabctrc.saha.org.za/reports/volume6/section1/chapter1/subsection5.htm
+    retention: permanent
+
+  - id: src:za-justice-amnesty-index
+    type: source
+    label: "Department of Justice (South Africa), TRC Amnesty Hearings and Decisions index with Summary of Amnesty Decisions, 1 November 2000 (index entry 9)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.justice.gov.za/trc/amntrans/index.htm
+    retention: permanent
+
+  - id: src:gibson-2002-ajps
+    type: source
+    label: "Gibson (2002), Truth, Justice, and Reconciliation: Judging the Fairness of Amnesty in South Africa, AJPS 46(3) 540-556 (index entry 9)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    links:
+      - https://doi.org/10.2307/3088398
+    retention: permanent
+
+  - id: clm:azapo-incentive-reasoning
+    type: claim
+    label: "The Constitutional Court reasoned (AZAPO para 17) that the truth is 'much more likely to be forthcoming' when perpetrators have 'the incentive that they will not receive the punishment', and that 'without that incentive there is nothing to encourage such persons to make the disclosures'; para 36 extends this to civil liability."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:trc-full-disclosure-read-narrowly
+    type: claim
+    label: "The Amnesty Committee read 'full disclosure' as relating solely to the incident applied for; it records the criticism that applicants 'were able to hold back information' and accepts it as 'serious and substantial' (TRC Vol 6 s 1 ch 1 paras 25-27)."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:trc-amnesty-scale
+    type: claim
+    label: "7,115 amnesty applications, 5,489 decided in chambers without hearing (TRC Vol 6 s 1). Snapshot 1 Nov 2000: 849 granted, 5,392 refused, 248 withdrawn, 302 outstanding of 7,112, with the source's warning against statistical use. No final itemised tally found."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:gibson-2002-amnesty-fairness
+    type: claim
+    label: "South Africans were broadly not opposed to amnesty but did not judge it fair in itself; perceived fairness rose with victim compensation, voice and apology (Gibson 2002, survey plus vignette experiment)."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
     retention: permanent
 
 edges:
@@ -776,4 +879,90 @@ edges:
     to: prm:verifiability
     created: 2026-10-23
     provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    status: active
+
+  # TRC amnesty brief (2026-10-24)
+  - id: e:035
+    type: supports
+    from: src:za-act-34-1995
+    to: clm:trc-amnesty-for-disclosure
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+  - id: e:036
+    type: supports
+    from: src:azapo-1996-zacc-16
+    to: clm:trc-amnesty-for-disclosure
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+  - id: e:037
+    type: supports
+    from: src:trc-final-report-vol6-s1
+    to: clm:trc-amnesty-for-disclosure
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+  - id: e:038
+    type: supports
+    from: src:azapo-1996-zacc-16
+    to: clm:azapo-incentive-reasoning
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+  - id: e:039
+    type: supports
+    from: src:trc-final-report-vol6-s1
+    to: clm:trc-full-disclosure-read-narrowly
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+  - id: e:040
+    type: supports
+    from: src:trc-final-report-vol6-s1
+    to: clm:trc-amnesty-scale
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+  - id: e:041
+    type: supports
+    from: src:za-justice-amnesty-index
+    to: clm:trc-amnesty-scale
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+  - id: e:042
+    type: supports
+    from: src:gibson-2002-ajps
+    to: clm:gibson-2002-amnesty-fairness
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+  - id: e:043
+    type: supports
+    from: clm:azapo-incentive-reasoning
+    to: cnf:transparency-without-amnesty
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+  - id: e:044
+    type: contradicts
+    from: clm:trc-full-disclosure-read-narrowly
+    to: cnf:transparency-without-amnesty
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+  - id: e:045
+    type: cites
+    from: clm:gibson-2002-amnesty-fairness
+    to: cnf:transparency-without-amnesty
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+  - id: e:046
+    type: cites
+    from: src:trc-final-report-vol6-s1
+    to: src:za-act-34-1995
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
     status: active
