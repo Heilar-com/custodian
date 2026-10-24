@@ -25,7 +25,7 @@ Whole system as living organism. Integrity gaps in research as cascading coheren
 
 ## Slide 5: Research Layer – Integrity Gaps
 - ~49% of high-profile social media research has industry ties (majority undisclosed). arXiv:2601.11507.
-- Suspected paper-mill articles: 50-100% more citations despite fewer readers (PNAS 2026).
+- Suspected paper-mill articles: 50-100% more citations despite fewer readers (attributed to PNAS 2026; not verified, see research notes).
 - Political science abstracts: 94% non-null; ~2% null-only (nulls suppressed 10-100x).
 Trace affiliations: funders → authors → citations → media → politicians. Incentive transparency exposes motives.
 

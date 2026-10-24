@@ -39,7 +39,7 @@ Topics emerge from people talking. Research is the mirror that shows what those 
 
 ## (g) How to change things
 - Open an issue or PR. Do not edit `main` directly. Markús merges.
-- Log every design decision as a `decision` node in the graph ([docs/graph-schema.md](docs/graph-schema.md)), with its tensions as `contradicts` edges or `conflict` nodes.
+- Log every design decision as a `decision` node in the graph ([docs/graph-schema.md](docs/graph-schema.md), data in [graph/graph.yaml](graph/graph.yaml)), with its tensions as `contradicts` edges or `conflict` nodes.
 - Separate confirmed findings from claims. Cite nothing you have not checked.
 
 ## Experimental Posture
