@@ -1,6 +1,6 @@
 # Prior-art index
 
-Annotated index of projects and studies related to Custodian. Checked 2026-10-23 (Atlantic/Reykjavik); entries 9 to 12 added 2026-10-24.
+Annotated index of projects and studies related to Custodian. Checked 2026-10-23 (Atlantic/Reykjavik); entries 9 to 13 added 2026-10-24.
 
 How to read each entry:
 - **Confirmed**: checked against the primary source linked in the entry.
@@ -144,13 +144,26 @@ Verification tiers follow [docs/graph-schema.md](../graph-schema.md). A tier des
 - **Open questions.** Can Greenberg's claim-specific network method be run automatically over OpenAlex for a claim raised at a table? What would it cost to flag a `cites`-only chain in real time in scoped mode? Does the independence rule need a "no data" marker for amplification papers, which the current schema cannot express? Has anyone replicated Greenberg's method on a second claim?
 - **Sources.** https://doi.org/10.2307/351830 · https://doi.org/10.1136/bmj.b2680 · https://pmc.ncbi.nlm.nih.gov/articles/PMC2714656/ · https://doi.org/10.1177/0306312714535679 · https://pmc.ncbi.nlm.nih.gov/articles/PMC4232290 · https://doi.org/10.1016/j.jclinepi.2012.09.015 · https://doi.org/10.1016/j.jclinepi.2017.06.002 · https://doi.org/10.1177/01410768221075881 · https://pmc.ncbi.nlm.nih.gov/articles/PMC8814996/ · https://doi.org/10.1056/NEJMc1700150 · https://en.wikipedia.org/wiki/Woozle_effect (for the Houghton and Gelles attributions only)
 
+## 13. Iceland: Þjóðfundur 2009, the civil-society national forum
+**Status:** Verified (date, venue, invitation design, method and headline results from contemporaneous news). Partly verified (attendance: 1,231 per the Grapevine, "roughly 1,200" elsewhere; cost). The forum's own website is gone. Checked 2026-10-24.
+**Verification tier (primary sources):** news-outlet (Morgunblaðið 11 November 2009; Reykjavík Grapevine 4 December 2009, via timarit.is; RÚV radio 2024). Participedia and Wikipedia: creator-content, used only to locate the news sources.
+
+- **What it was.** Confirmed (Morgunblaðið, 11 November 2009): a one-day forum "í Laugardalshöll á laugardaginn", 14 November 2009. "1.500 manns hafa fengið boð um að mæta": about 1,200 drawn by "1.200 manna slembiúrtaki úr þjóðskrá", balanced by sex, age and region, and about 300 seats offered to "fulltrúum félaga, samtaka og stofnana". No keynote speeches and no draft resolutions. "Fundarmönnum verður skipt upp í níu manna hópa og er hópstjóri skipaður á hvert borð, samtals 162 borðstjórar." Table leaders were to contact their group in advance.
+- **Who ran it.** Confirmed (Grapevine, 4 December 2009): a group calling itself "the Anthill" (Mauraþúfan), with Guðjón Már Guðjónsson, Haukur Ingi Jónasson and Maríanna Friðjónsdóttir named. A grassroots initiative one year after the collapse, not a state body. Self-description (Participedia): government paid about a quarter of the cost; the Wikipedia article, citing Iceland Review, gives 27 million ISK total and 7 million from the state. Cost not verified against a primary source.
+- **Attendance.** Partly verified: the Grapevine reports 1,231 attendees against a target of 1,500; RÚV's 2024 retrospective says 1,200. The forum's own demographics page, cited by Wikipedia, is no longer online.
+- **Method and output.** Confirmed (Grapevine): the morning identified values and visions; the afternoon applied them to nine themes (education, economy, equal rights and others). About one hundred recommendations were posted online within hours. The four values ranked highest: integrity (heiðarleiki), equal rights, respect, justice. The results "were not scheduled for presentation to Parliament".
+- **What became of it.** Confirmed: the statutory Þjóðfundur 2010 (entry 10) copied the design, random sample from the national register, tables with facilitators, one day in Laugardalshöll, under Act 90/2010 and with 950 attending. The 2009 forum's own site, thjodfundur2009.is, now serves unrelated commercial content (checked 2026-10-24), and its subpages return 404. Its record survives only in news coverage, secondary summaries and whatever participants kept. The same loss is the capture gap the manifesto names, one layer up: not the raw talk but even the published summary.
+- **Strongest overlap with Custodian.** This is the closest ancestor of a Custodian table: random invitation, nine to a table, a facilitator, values before topics, results published the same day. It also shows the two failure modes the book names. Handoff: the output had no addressee. Record: the output itself did not survive a decade online. A permanent, content-free commitment log (civic.audit) would at least have proven what was published and when.
+- **Open questions.** Does a copy of thjodfundur2009.is exist in the Icelandic web archive (vefsafn.is) or with the organisers? What was the response rate to the random invitation (1,200 invited, how many came)? Did the 2010 statutory forum cite the 2009 one as its model in the stjórnlaganefnd report? Who holds the table-level data?
+- **Sources.** http://www.mbl.is/mm/frettir/innlent/2009/11/11/thjodfundur_um_framtidarsyn_islendinga/ · https://timarit.is/page/5800755 · https://ruv.is/utvarp/spila/morgunvaktin/23614/7hhhc0 · https://participedia.net/case/62 · https://en.wikipedia.org/wiki/National_Assembly_of_2009 (for locating sources only)
+
 ---
 
 ## Research gaps: not yet indexed
 
 Named in [docs/book-outline.md](../book-outline.md) on 2026-10-23. Each is **Not verified** until a brief with primary sources replaces this line. They are recorded in the graph as claims with no supporting edge.
 
-- **Þjóðfundur 2009.** The civil-society forum of November 2009; participant count, selection method and what became of its output are unchecked. Not to be confused with the statutory Þjóðfundur 2010 (950 participants, random sample), now covered in entry 10.
+- ~~Þjóðfundur 2009.~~ Now entry 13 (checked 2026-10-24). Still open inside it: the forum's own website is gone; cost and exact attendance rest on news reports.
 - ~~Stjórnlagaráð 2011 and the 2012 referendum.~~ Now entry 10 (checked 2026-10-24).
 - ~~Taiwan Join platform.~~ Now entry 11 (checked 2026-10-24).
 - ~~South Africa Truth and Reconciliation Commission.~~ Now entry 9 (checked 2026-10-24).

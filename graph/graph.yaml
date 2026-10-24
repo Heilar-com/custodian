@@ -398,12 +398,12 @@ nodes:
 
   - id: clm:thjodfundur-2009
     type: claim
-    label: "Þjóðfundur 2009 gathered about 1,500 randomly selected citizens to set national values; its output did not bind any institution. Research gap, no source checked."
+    label: "Þjóðfundur 2009 (14 November, Laugardalshöll, organised by the grassroots Anthill): 1,500 invited, 1,200 by random sample from the national register plus 300 organisational representatives; about 1,231 attended at tables of nine with 162 table leaders; four values published the same day; results had no addressee in government."
     created: 2026-10-23
-    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
     status: active
-    verification_tier: n/a
-    verification_status: not-verified
+    verification_tier: news-outlet
+    verification_status: confirmed
     retention: permanent
 
   - id: clm:stjornlagarad-2011-not-ratified
@@ -1079,6 +1079,65 @@ nodes:
     status: active
     verification_tier: n/a
     verification_status: self-description
+    retention: permanent
+
+
+  - id: src:mbl-2009-11-11-thjodfundur
+    type: source
+    label: "Morgunblaðið, 11 November 2009, Fréttaskýring: Þjóðfundur um framtíðarsýn Íslendinga (index entry 13)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+    verification_tier: news-outlet
+    verification_status: confirmed
+    links:
+      - http://www.mbl.is/mm/frettir/innlent/2009/11/11/thjodfundur_um_framtidarsyn_islendinga/
+    retention: permanent
+
+  - id: src:grapevine-2009-12-04-thjodfundur
+    type: source
+    label: "Reykjavík Grapevine, 4 December 2009, p. 6, report on the National Assembly, via timarit.is (index entry 13)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+    verification_tier: news-outlet
+    verification_status: confirmed
+    links:
+      - https://timarit.is/page/5800755
+    retention: permanent
+
+  - id: src:ruv-2024-morgunvaktin-thjodfundur
+    type: source
+    label: "RÚV Morgunvaktin, 2024 retrospective on the 2009 national forum, 1,200 participants (index entry 13)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+    verification_tier: news-outlet
+    verification_status: confirmed
+    links:
+      - https://ruv.is/utvarp/spila/morgunvaktin/23614/7hhhc0
+    retention: permanent
+
+  - id: src:participedia-case-62
+    type: source
+    label: "Participedia, case 62: Icelandic National Assembly 2009. Secondary summary (index entry 13)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    links:
+      - https://participedia.net/case/62
+    retention: permanent
+
+  - id: clm:thjodfundur-2009-record-lost
+    type: claim
+    label: "The 2009 forum's website, thjodfundur2009.is, no longer serves the forum's content (checked 2026-10-24: unrelated commercial site; results subpages return 404). The published record survives only in news coverage and secondary summaries."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+    verification_tier: news-outlet
+    verification_status: confirmed
     retention: permanent
 
 edges:
@@ -1780,4 +1839,62 @@ edges:
     to: prm:verifiability
     created: 2026-10-24
     provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+
+  # Þjóðfundur 2009 brief (2026-10-24)
+  - id: e:098
+    type: supports
+    from: src:mbl-2009-11-11-thjodfundur
+    to: clm:thjodfundur-2009
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+  - id: e:099
+    type: supports
+    from: src:grapevine-2009-12-04-thjodfundur
+    to: clm:thjodfundur-2009
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+  - id: e:100
+    type: supports
+    from: src:ruv-2024-morgunvaktin-thjodfundur
+    to: clm:thjodfundur-2009
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+  - id: e:101
+    type: cites
+    from: src:participedia-case-62
+    to: clm:thjodfundur-2009
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+  - id: e:102
+    type: supports
+    from: clm:thjodfundur-2009-record-lost
+    to: dsn:civic-audit-log
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+  - id: e:103
+    type: supports
+    from: clm:thjodfundur-2009
+    to: cnf:handoff-gap
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+  - id: e:104
+    type: derives-from
+    from: clm:thjodfundur-2010-random-sample
+    to: clm:thjodfundur-2009
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+  - id: e:105
+    type: cites
+    from: clm:thjodfundur-2009
+    to: dsn:open-mode
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
     status: active
