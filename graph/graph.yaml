@@ -438,12 +438,12 @@ nodes:
 
   - id: clm:woozle-effect
     type: claim
-    label: "The Woozle effect: repeated citation of a single weak source makes a claim appear well supported. Research gap, origin and evidence unchecked."
+    label: "The Woozle effect: repeated citation of a single weak source, with its qualifications dropped along the way, makes a claim appear well supported. Named in family-violence research (Gelles 1980; attributed to Houghton 1979, unverified). Mechanism confirmed by citation-network studies."
     created: 2026-10-23
-    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
     status: active
-    verification_tier: n/a
-    verification_status: not-verified
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
     retention: permanent
 
   - id: clm:iceland-post-2008-prosecutions
@@ -929,6 +929,156 @@ nodes:
     status: active
     verification_tier: institutional-report
     verification_status: confirmed
+    retention: permanent
+
+
+  - id: src:gelles-1980-jmf
+    type: source
+    label: "Gelles (1980), Violence in the Family: A Review of Research in the Seventies, Journal of Marriage and the Family 42(4) 873-885. Existence confirmed via Crossref; text not read (index entry 12)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: self-description
+    links:
+      - https://doi.org/10.2307/351830
+    retention: permanent
+
+  - id: src:houghton-1979-asc
+    type: source
+    label: "Houghton (1979), panel presentation, Review of Research on Women Abuse, American Society of Criminology, Philadelphia. Attribution via secondary sources only (index entry 12)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: creator-content
+    verification_status: not-verified
+    links:
+      - https://en.wikipedia.org/wiki/Woozle_effect
+    retention: permanent
+
+  - id: src:greenberg-2009-bmj
+    type: source
+    label: "Greenberg (2009), How citation distortions create unfounded authority: analysis of a citation network, BMJ 339:b2680 (index entry 12)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    links:
+      - https://doi.org/10.1136/bmj.b2680
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC2714656/
+    retention: permanent
+
+  - id: src:rekdal-2014-sss
+    type: source
+    label: "Rekdal (2014), Academic urban legends, Social Studies of Science 44(4) 638-654 (index entry 12)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    links:
+      - https://doi.org/10.1177/0306312714535679
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC4232290
+    retention: permanent
+
+  - id: src:jannot-2013-jce
+    type: source
+    label: "Jannot, Agoritsas, Gayet-Ageron, Perneger (2013), Citation bias favoring statistically significant studies was present in medical research, J Clin Epidemiol 66(3) 296-301 (index entry 12)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    links:
+      - https://doi.org/10.1016/j.jclinepi.2012.09.015
+    retention: permanent
+
+  - id: src:duyx-2017-jce
+    type: source
+    label: "Duyx, Urlings, Swaen, Bouter, Zeegers (2017), Scientific citations favor positive results: a systematic review and meta-analysis, J Clin Epidemiol 88, 92-101 (index entry 12)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    links:
+      - https://doi.org/10.1016/j.jclinepi.2017.06.002
+    retention: permanent
+
+  - id: src:gotzsche-2022-jrsm
+    type: source
+    label: "Gøtzsche (2022), Citation bias: questionable research practice or scientific misconduct?, J R Soc Med 115(1) 31-35 (index entry 12)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    links:
+      - https://doi.org/10.1177/01410768221075881
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC8814996/
+    retention: permanent
+
+  - id: src:leung-2017-nejm
+    type: source
+    label: "Leung, Macdonald, Stanbrook, Dhalla, Juurlink (2017), A 1980 Letter on the Risk of Opioid Addiction, NEJM 376(22) 2194-2195. Existence confirmed; text not read (index entry 12)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: self-description
+    links:
+      - https://doi.org/10.1056/NEJMc1700150
+    retention: permanent
+
+  - id: clm:greenberg-citation-cascade
+    type: claim
+    label: "One biomedical claim's citation network: 242 papers, 675 citations, 220,553 supporting citation paths; the six primary-data papers refuting or weakening it got 6% of citations to primary data; six of the ten most authoritative papers had no primary data; bias or invention in eight of nine NIH grants (Greenberg 2009)."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:citation-bias-favours-positive-results
+    type: claim
+    label: "Statistically significant results are cited 1.6x (95% CI 1.3-1.8) as often as non-significant ones across 52 studies, 2.7x when authors claim support for their hypothesis (Duyx et al. 2017); 2.14x (1.38-3.33) across 458 Cochrane trials, 1.14x after adjusting for journal impact factor (Jannot et al. 2013)."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:rekdal-spinach-chain
+    type: claim
+    label: "The spinach decimal-point story is itself a legend: Bender 1972 hedged, Hamblin 1981 stated it as fact with no source, Larsson 1995 cited Hamblin unread, Sutton 2010 found Hamblin could not recall his source. Chains form by citing secondaries as primary, padding with secondaries, citing unread work and dropping hedges (Rekdal 2014)."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:citation-bias-can-be-misconduct
+    type: claim
+    label: "Citation bias is a questionable research practice that is sometimes gross enough to amount to scientific misconduct; the 2017 meta-analysis itself omitted a 1987 report that three of its included studies cited (Gøtzsche 2022)."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    retention: permanent
+
+  - id: dsn:axiom-independence-rule
+    type: design-item
+    label: "Independence rule for axiom-candidate status: two or more independent supports from different verification tiers; supports linked by same-as, derives-from or a cites-only basis, or sharing provenance, count once (docs/graph-schema.md)."
+    created: 2026-10-24
+    provenance: "Markús, docs/graph-schema.md; recorded as a node by Claude Fable 5.1"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
     retention: permanent
 
 edges:
@@ -1516,4 +1666,118 @@ edges:
     to: prm:incentive-transparency
     created: 2026-10-24
     provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 11"
+    status: active
+
+  # Woozle brief (2026-10-24)
+  - id: e:082
+    type: supports
+    from: src:gelles-1980-jmf
+    to: clm:woozle-effect
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:083
+    type: cites
+    from: src:gelles-1980-jmf
+    to: src:houghton-1979-asc
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:084
+    type: supports
+    from: src:greenberg-2009-bmj
+    to: clm:greenberg-citation-cascade
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:085
+    type: supports
+    from: src:rekdal-2014-sss
+    to: clm:rekdal-spinach-chain
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:086
+    type: supports
+    from: src:jannot-2013-jce
+    to: clm:citation-bias-favours-positive-results
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:087
+    type: supports
+    from: src:duyx-2017-jce
+    to: clm:citation-bias-favours-positive-results
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:088
+    type: supports
+    from: src:gotzsche-2022-jrsm
+    to: clm:citation-bias-can-be-misconduct
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:089
+    type: contradicts
+    from: clm:citation-bias-can-be-misconduct
+    to: src:duyx-2017-jce
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:090
+    type: supports
+    from: clm:greenberg-citation-cascade
+    to: clm:woozle-effect
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:091
+    type: supports
+    from: clm:rekdal-spinach-chain
+    to: clm:woozle-effect
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:092
+    type: cites
+    from: src:leung-2017-nejm
+    to: clm:woozle-effect
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:093
+    type: supports
+    from: clm:greenberg-citation-cascade
+    to: dsn:axiom-independence-rule
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:094
+    type: supports
+    from: clm:rekdal-spinach-chain
+    to: dsn:axiom-independence-rule
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:095
+    type: supports
+    from: clm:citation-bias-favours-positive-results
+    to: prm:disagreement-preserved
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:096
+    type: cites
+    from: clm:citation-bias-can-be-misconduct
+    to: prm:incentive-transparency
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
+    status: active
+  - id: e:097
+    type: derives-from
+    from: dsn:axiom-independence-rule
+    to: prm:verifiability
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 12"
     status: active

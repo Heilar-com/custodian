@@ -41,7 +41,7 @@ Each needs a brief with primary sources and a verification marker in the prior-a
 - Stjórnlagaráð 2011 and the 2012 advisory referendum: done, see prior-art index entry 10 (2026-10-24). Advisory by law, 66.9% yes on 48.9% turnout, bill tabled November 2012 and never passed; Alþingi passed a temporary amendment procedure instead. The 2010 election's annulment also damaged the Council's standing before it sat.
 - Taiwan Join platform: done, see prior-art index entry 11 (2026-10-24). 5,000 endorsements in 60 days oblige the agency to publish a reasoned response within two months; 1.5% to 6% of endorsed proposals get there; agencies often miss the deadline; nothing is deleted from the platform.
 - South Africa TRC: done, see prior-art index entry 9 (2026-10-24). The bargain is confirmed in law and court reasoning; the TRC's own report shows a narrow disclosure test let applicants hold back, and Gibson 2002 shows amnesty was accepted only alongside compensation, voice and apology.
-- Woozle effect: origin of the term and empirical work on citation cascades.
+- Woozle effect: done, see prior-art index entry 12 (2026-10-24). Term from family-violence research around 1979 to 1980 (origin partly verified). Greenberg 2009 measured one cascade: 6% of citations to the papers with contrary data, six of the ten most authoritative papers with no data. Significant results are cited 1.6 to 2.1 times as often as null results.
 - Iceland post-2008: the special prosecutor, convictions, and any evidence on disclosure effects.
 
 ## Set aside
