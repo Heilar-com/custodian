@@ -408,12 +408,12 @@ nodes:
 
   - id: clm:stjornlagarad-2011-not-ratified
     type: claim
-    label: "The 2011 Constitutional Council drafted a constitution from crowdsourced input; a 2012 advisory referendum approved it; Alþingi never ratified it. Research gap, no source checked."
+    label: "The 25-member Stjórnlagaráð, appointed by Alþingi on 24 March 2011 after the Supreme Court annulled the Assembly election, delivered a constitutional bill on 29 July 2011. An advisory referendum on 20 October 2012 approved it as a basis (66.9% yes, 48.9% turnout). The bill (Þskj. 510, 141st session) was tabled in November 2012 and never passed."
     created: 2026-10-23
-    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
     status: active
-    verification_tier: n/a
-    verification_status: not-verified
+    verification_tier: institutional-report
+    verification_status: confirmed
     retention: permanent
 
   - id: clm:taiwan-join-response-obligation
@@ -626,6 +626,181 @@ nodes:
     provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
     status: active
     verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    retention: permanent
+
+
+  - id: src:is-act-90-2010
+    type: source
+    label: "Lög um stjórnlagaþing nr. 90/2010 (Iceland), Alþingi Act text (index entry 10)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.althingi.is/altext/stjt/2010.090.html
+    retention: permanent
+
+  - id: src:stjornlaganefnd-2011-thjodfundur
+    type: source
+    label: "Skýrsla stjórnlaganefndar 2011, vol 1, chapter on Þjóðfundur 2010 (index entry 10)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://stjornarradid.is/media/forsaetisraduneyti-media/media/stjornarskra/Skyrsla_stjornlaganefndar_fyrra_bindi_Thjodfundur_2010.pdf
+    retention: permanent
+
+  - id: src:haestirettur-2011-01-25
+    type: source
+    label: "Hæstiréttur Íslands, decision of 25 January 2011 annulling the election to the Constitutional Assembly (index entry 10)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://island.is/s/haestirettur/eldri-akvardanir
+    retention: permanent
+
+  - id: src:althingi-thal-19-139
+    type: source
+    label: "Alþingi, Þingsályktun 19/139 um skipun stjórnlagaráðs (Þskj. 1120), 24 March 2011, with majority committee report Þskj. 1028 (index entry 10)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.althingi.is/altext/pdf/139/s/1120.pdf
+      - https://www.althingi.is/altext/pdf/139/s/1028.pdf
+    retention: permanent
+
+  - id: src:althingi-thskj-831-140
+    type: source
+    label: "Alþingi, Þskj. 831 (140th session): amendment on the handling of the Stjórnlagaráð bill and the advisory referendum (index entry 10)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.althingi.is/altext/pdf/140/s/0831.pdf
+    retention: permanent
+
+  - id: src:hagstofa-2013-1-referendum
+    type: source
+    label: "Hagstofa Íslands, Hagskýrslur 2013:1, Þjóðaratkvæðagreiðsla 20. október 2012, 18 April 2013 (index entry 10)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://rafhladan.is/bitstream/handle/10802/17948/pub_doc_cLUdNTs.pdf?sequence=1
+    retention: permanent
+
+  - id: src:innanrikisraduneyti-2012-10-30
+    type: source
+    label: "Innanríkisráðuneytið, Auglýsing um niðurstöður þjóðaratkvæðagreiðslunnar 20. október 2012, 30 October 2012 (index entry 10)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2012/10/30/Auglysing-um-nidurstodur-thjodaratkvaedagreidslunnar-20.-oktober-2012/
+    retention: permanent
+
+  - id: src:althingi-thskj-510-141
+    type: source
+    label: "Alþingi, Þskj. 510, 415. mál (141st session): Frumvarp til stjórnarskipunarlaga um stjórnarskrá lýðveldisins Íslands, 16 November 2012 (index entry 10)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.althingi.is/altext/pdf/141/s/0510.pdf
+    retention: permanent
+
+  - id: src:althingi-temp-amendment-bills-2013
+    type: source
+    label: "Alþingi, Þskj. 1139 (641. mál, 141st) and Þskj. 5 (5. mál, 142nd): temporary provision on amending the constitution, 2013 (index entry 10)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.althingi.is/altext/pdf/141/s/1139.pdf
+      - https://www.althingi.is/altext/pdf/142/s/0005.pdf
+    retention: permanent
+
+  - id: src:venice-cdl-ad-2013-010
+    type: source
+    label: "Venice Commission, Opinion on the Draft New Constitution of Iceland, CDL-AD(2013)010, adopted 8-9 March 2013. Existence and date confirmed; content not read (index entry 10)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: self-description
+    links:
+      - https://www.coe.int/en/web/venice-commission/-/cdl-ad-2013-010-e
+    retention: permanent
+
+  - id: src:landemore-2015-jopp
+    type: source
+    label: "Landemore (2015), Inclusive Constitution-Making: The Icelandic Experiment, Journal of Political Philosophy 23(2) 166-191 (index entry 10)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    links:
+      - https://doi.org/10.1111/jopp.12032
+    retention: permanent
+
+  - id: clm:thjodfundur-2010-random-sample
+    type: claim
+    label: "Act 90/2010 required a national forum of about 1,000 people chosen by random sample from the national register, balanced by region and sex; 950 attended in Laugardalshöll on 6 November 2010, at tables of eight with facilitators."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:stjornlagathing-election-annulled
+    type: claim
+    label: "The Supreme Court (six justices) declared the 27 November 2010 election to the Constitutional Assembly void on 25 January 2011 for defects in ballot secrecy, booths, boxes and counting. Alþingi's committee called the decision final."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:referendum-2012-results
+    type: claim
+    label: "Advisory referendum 20 October 2012: electorate 236,850, votes cast 115,890 (48.9%). Question 1, Council proposals as basis for a new constitution: 73,509 yes, 36,302 no (66.9%). All six questions carried."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:althingi-temp-provision-instead-of-constitution
+    type: claim
+    label: "The 141st Alþingi did not pass the constitutional bill (415. mál). It passed a temporary provision (641. mál) allowing amendment by a qualified Alþingi majority plus referendum until 30 April 2017, resubmitted unchanged in substance as Þskj. 5 after the April 2013 election. Enactment as law 91/2013 not verified."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+    verification_tier: institutional-report
     verification_status: confirmed
     retention: permanent
 
@@ -965,4 +1140,132 @@ edges:
     to: src:za-act-34-1995
     created: 2026-10-24
     provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 9"
+    status: active
+
+  # Stjórnlagaráð brief (2026-10-24)
+  - id: e:047
+    type: supports
+    from: src:is-act-90-2010
+    to: clm:thjodfundur-2010-random-sample
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:048
+    type: supports
+    from: src:stjornlaganefnd-2011-thjodfundur
+    to: clm:thjodfundur-2010-random-sample
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:049
+    type: supports
+    from: src:haestirettur-2011-01-25
+    to: clm:stjornlagathing-election-annulled
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:050
+    type: supports
+    from: src:althingi-thal-19-139
+    to: clm:stjornlagathing-election-annulled
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:051
+    type: supports
+    from: src:althingi-thal-19-139
+    to: clm:stjornlagarad-2011-not-ratified
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:052
+    type: supports
+    from: src:althingi-thskj-831-140
+    to: clm:stjornlagarad-2011-not-ratified
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:053
+    type: supports
+    from: src:althingi-thskj-510-141
+    to: clm:stjornlagarad-2011-not-ratified
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:054
+    type: supports
+    from: src:althingi-temp-amendment-bills-2013
+    to: clm:stjornlagarad-2011-not-ratified
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:055
+    type: supports
+    from: src:hagstofa-2013-1-referendum
+    to: clm:referendum-2012-results
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:056
+    type: supports
+    from: src:innanrikisraduneyti-2012-10-30
+    to: clm:referendum-2012-results
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:057
+    type: supports
+    from: src:althingi-temp-amendment-bills-2013
+    to: clm:althingi-temp-provision-instead-of-constitution
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:058
+    type: supports
+    from: src:althingi-thskj-510-141
+    to: clm:althingi-temp-provision-instead-of-constitution
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:059
+    type: supports
+    from: clm:referendum-2012-results
+    to: cnf:handoff-gap
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:060
+    type: supports
+    from: clm:althingi-temp-provision-instead-of-constitution
+    to: cnf:handoff-gap
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:061
+    type: contradicts
+    from: clm:stjornlagathing-election-annulled
+    to: cnf:handoff-gap
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:062
+    type: cites
+    from: src:venice-cdl-ad-2013-010
+    to: clm:stjornlagarad-2011-not-ratified
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:063
+    type: cites
+    from: src:landemore-2015-jopp
+    to: clm:stjornlagarad-2011-not-ratified
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
+    status: active
+  - id: e:064
+    type: cites
+    from: clm:thjodfundur-2010-random-sample
+    to: dsn:open-mode
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 10"
     status: active

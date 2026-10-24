@@ -12,7 +12,7 @@ Language rule for the whole book: the mirror informs, it never cleans. It shows 
 
 ## Part I: The situation
 
-1. **The summary bottleneck.** Þjóðfundur 2009, the Constitutional Council of 2011 and Samtalið 2026 as three attempts to let people speak into the record. Each time, what left the room was a summary. In 2011 the summary reached a referendum and then stopped at the handoff to Alþingi. The capture gap and the handoff gap, introduced through Iceland's own history.
+1. **The summary bottleneck.** Þjóðfundur 2009 and 2010, the Constitutional Council of 2011 and Samtalið 2026 as three attempts to let people speak into the record. Each time, what left the room was a summary. In 2011 the summary reached a referendum and then stopped at the handoff to Alþingi. The capture gap and the handoff gap, introduced through Iceland's own history.
 2. **The record is shaped.** Suppressed nulls, undisclosed industry ties, paper mills. Not fraud at the margins but selection at the centre. The published record is biased by design and the bias is legible once you look for it.
 3. **The cascade.** Research to media to politics to public talk to schools. The mechanism is self-reference: a press release cites a study, a newspaper cites the release, a politician cites the newspaper. The Woozle effect as the unit of the cascade. Dark regions: where the conversation never goes.
 4. **Why it grew this way.** Publish-or-perish, impact factors, ad-funded news, election cycles. Goodhart's law, not villains. People acted inside structures that rewarded exactly this. The chapter must hold two things at once: nobody chose this, and the harm is real. Without both, Part III has nothing to forgive.
@@ -38,7 +38,7 @@ Language rule for the whole book: the mirror informs, it never cleans. It shows 
 Each needs a brief with primary sources and a verification marker in the prior-art index. None is verified today.
 
 - Þjóðfundur 2009: participants, selection method, what happened to its output.
-- Stjórnlagaráð 2011 and the 2012 advisory referendum: process, result, why Alþingi never ratified.
+- Stjórnlagaráð 2011 and the 2012 advisory referendum: done, see prior-art index entry 10 (2026-10-24). Advisory by law, 66.9% yes on 48.9% turnout, bill tabled November 2012 and never passed; Alþingi passed a temporary amendment procedure instead. The 2010 election's annulment also damaged the Council's standing before it sat.
 - Taiwan Join platform: the signature threshold and the response obligation it triggers.
 - South Africa TRC: done, see prior-art index entry 9 (2026-10-24). The bargain is confirmed in law and court reasoning; the TRC's own report shows a narrow disclosure test let applicants hold back, and Gibson 2002 shows amnesty was accepted only alongside compensation, voice and apology.
 - Woozle effect: origin of the term and empirical work on citation cascades.
