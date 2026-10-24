@@ -1,6 +1,6 @@
 # Graph schema
 
-How Custodian records claims, sources, design items and decisions as a graph. This is a schema document. Seed data following it lives in [graph/graph.yaml](../graph/graph.yaml). No code reads it yet.
+How Custodian records claims, sources, design items and decisions as a graph. This is a schema document. Seed data following it lives in [graph/graph.yaml](../graph/graph.yaml). [graph/check.py](../graph/check.py) validates that file against this schema and computes the axiom rule below; see [graph/README.md](../graph/README.md).
 
 ## Node types
 

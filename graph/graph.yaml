@@ -1,6 +1,6 @@
 # Custodian graph: seed data
 #
-# Follows docs/graph-schema.md. This file is data only; nothing reads it yet.
+# Follows docs/graph-schema.md. graph/check.py validates it and computes axiom-candidate status.
 # Seeded 2026-10-23 from docs/research/prior-art-index.md (checked 2026-10-23)
 # and the non-deletion decision in docs/civic-contract-sketch.md.
 #

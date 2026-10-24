@@ -33,7 +33,7 @@ Three primitives:
 - [Behavioural metadata](docs/behavioural-metadata.md)
 - [Challengeable flags](docs/challengeable-flags.md)
 - [Participant classes and seed path](docs/participant-classes.md)
-- [Graph schema](docs/graph-schema.md) and [seed data](graph/graph.yaml)
+- [Graph schema](docs/graph-schema.md), [seed data](graph/graph.yaml) and the [checker](graph/README.md)
 - [Slide Deck Outline](docs/slide-deck-outline.md) (organism metaphor and cascade for deeper exploration)
 
 Start small. One node. One table. One honest record.
