@@ -448,12 +448,12 @@ nodes:
 
   - id: clm:iceland-post-2008-prosecutions
     type: claim
-    label: "Iceland prosecuted and convicted senior bankers after 2008 through a special prosecutor, the counter-case to amnesty. Research gap, no source checked."
+    label: "Iceland answered the 2008 collapse with a record first (Special Investigation Commission, nine volumes, April 2010) and punishment second: a temporary special prosecutor 2009-2016 (806 cases investigated), a few dozen bank executives convicted, a Prime Minister convicted without penalty, and a long aftermath of European review, reopenings and, in 2026, a motion to investigate the prosecutors."
     created: 2026-10-23
-    provenance: "Claude Fable 5.1 (claude-fable-5-1), proposed 2026-10-23 while drafting docs/book-outline.md with Markús; a proposal, not a decision"
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
     status: active
-    verification_tier: n/a
-    verification_status: not-verified
+    verification_tier: institutional-report
+    verification_status: confirmed
     retention: permanent
 
   - id: dsn:handoff-agenda-power
@@ -1137,6 +1137,170 @@ nodes:
     provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
     status: active
     verification_tier: news-outlet
+    verification_status: confirmed
+    retention: permanent
+
+
+  - id: src:is-act-135-2008
+    type: source
+    label: "Lög um embætti sérstaks saksóknara nr. 135/2008 (Iceland), Alþingi law collection entry; text not read, existence and dates confirmed via Alþingi documents (index entry 14)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: institutional-report
+    verification_status: self-description
+    links:
+      - https://www.althingi.is/lagas/141a/2008135.html
+    retention: permanent
+
+  - id: src:althingi-nal-136-760
+    type: source
+    label: "Alþingi, Þskj. 760 (136th session, 17 March 2009): committee report on amending Act 135/2008; Ólafur Þ. Hauksson heard as special prosecutor; office described as temporary (index entry 14)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.althingi.is/altext/pdf/136/s/0760.pdf
+      - https://www.althingi.is/altext/pdf/139/s/1672.pdf
+    retention: permanent
+
+  - id: src:is-act-47-2015
+    type: source
+    label: "Act 47/2015 (Iceland), amending the Criminal Procedure Act and Police Act: District Prosecutor established, Act 135/2008 repealed from 1 January 2016 (index entry 14)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.althingi.is/altext/pdf/144/s/1511.pdf
+      - https://www.althingi.is/altext/pdf/151/s/0789.pdf
+    retention: permanent
+
+  - id: src:althingi-thskj-232-158
+    type: source
+    label: "Alþingi, Þskj. 232, 219. mál (158th session, 2026-2027): motion for an investigative commission into law-enforcement and oversight bodies after the 2008 collapse; cites the Audit Office's 806 cases (index entry 14)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.althingi.is/altext/pdf/158/s/0232.pdf
+    retention: permanent
+
+  - id: src:rna-2010-report
+    type: source
+    label: "Rannsóknarnefnd Alþingis (Special Investigation Commission), Act 142/2008, report delivered 12 April 2010 in nine volumes (index entry 14)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/
+      - https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/hlutverk-nefndarinnar-og-log/
+    retention: permanent
+
+  - id: src:echr-einarsson-2019
+    type: source
+    label: "ECHR, Sigurður Einarsson and Others v. Iceland, 4 June 2019, Icelandic translation published by the Government of Iceland (index entry 14)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.stjornarradid.is/library/03-Verkefni/Mannrettindi-og-jafnretti/Mannrettindi/CASE%20OF%20SIGUR%c3%90UR%20EINARSSON%20AND%20OTHERS%20V.%20ICELAND_ISL.pdf
+    retention: permanent
+
+  - id: src:echr-haarde-2017
+    type: source
+    label: "ECHR, Haarde v. Iceland, no. 66847/12, 23 November 2017 (index entry 14)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://rse.hi.is/wp-content/uploads/2021/09/CASE-OF-HAARDE-v.-ICELAND.pdf
+    retention: permanent
+
+  - id: src:echr-cp-iceland
+    type: source
+    label: "ECHR, country profile Iceland: Bjarki H. Diego 2022, five crash-case applications struck out 2021, Haarde 2017, Einarsson 2019 (index entry 14)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    links:
+      - https://www.echr.coe.int/documents/d/echr/CP_Iceland_ENG
+    retention: permanent
+
+  - id: src:grapevine-2018-02-07-bankers
+    type: source
+    label: "Reykjavík Grapevine, 7 February 2018, 36 Bankers, 96 Years In Jail, citing a Fréttablaðið count (index entry 14)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: news-outlet
+    verification_status: confirmed
+    links:
+      - https://grapevine.is/?p=9981291
+    retention: permanent
+
+  - id: src:ruv-2025-10-24-thetta-helst
+    type: source
+    label: "RÚV Þetta helst, 24 October 2025: Lindsor ruling in Luxembourg, last Icelandic crash case concluded 2021, Steinþór Gunnarsson acquitted on reopening (index entry 14)"
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: news-outlet
+    verification_status: confirmed
+    links:
+      - https://ruv.is/utvarp/spila/thetta-helst/33405/9uide0
+    retention: permanent
+
+  - id: clm:al-thani-sentences-and-echr
+    type: claim
+    label: "Al Thani case: FME referral 13 March 2009, indictment 16 February 2012, Supreme Court February 2015 sentences of 5y6m, 4y, 4y6m, 4y6m. ECHR 4 June 2019: violation of Article 6 § 1 because a justice's son had headed Kaupþing's legal division and advised its winding-up committee; no violation on file access or witnesses."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:landsdomur-haarde-2012
+    type: claim
+    label: "Landsdómur, 23 April 2012: former PM Geir H. Haarde acquitted unanimously on three counts, convicted 9-6 on one (failing to hold ministerial meetings on the banking danger, Article 17 of the Constitution), no punishment. ECHR 2017: no violation of Articles 6 or 7."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: institutional-report
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:hrun-conviction-tally
+    type: claim
+    label: "Newspaper count (Fréttablaðið via Grapevine, Feb 2018): 36 bankers sentenced to 96 years in total; 2015-2016 counts gave 26 people and 74 years. No official total found. The Audit Office's 806 is cases investigated, not convictions."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: news-outlet
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:hrun-aftermath-reopening-and-inquiry
+    type: claim
+    label: "The last Icelandic crash case concluded in 2021; one Landsbanki conviction was reopened and ended in acquittal (RÚV 2025); ECHR found further Article 6 violations (Diego 2022) and struck out five cases after settlements (2021); in 2026 fourteen MPs moved to appoint a commission to investigate the special prosecutor's conduct."
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+    verification_tier: institutional-report
     verification_status: confirmed
     retention: permanent
 
@@ -1897,4 +2061,111 @@ edges:
     to: dsn:open-mode
     created: 2026-10-24
     provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 13"
+    status: active
+
+  # Iceland post-2008 prosecutions brief (2026-10-24)
+  - id: e:106
+    type: supports
+    from: src:althingi-nal-136-760
+    to: clm:iceland-post-2008-prosecutions
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:107
+    type: supports
+    from: src:is-act-47-2015
+    to: clm:iceland-post-2008-prosecutions
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:108
+    type: supports
+    from: src:althingi-thskj-232-158
+    to: clm:iceland-post-2008-prosecutions
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:109
+    type: supports
+    from: src:rna-2010-report
+    to: clm:iceland-post-2008-prosecutions
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:110
+    type: cites
+    from: src:is-act-135-2008
+    to: clm:iceland-post-2008-prosecutions
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:111
+    type: supports
+    from: src:echr-einarsson-2019
+    to: clm:al-thani-sentences-and-echr
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:112
+    type: supports
+    from: src:echr-haarde-2017
+    to: clm:landsdomur-haarde-2012
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:113
+    type: supports
+    from: src:grapevine-2018-02-07-bankers
+    to: clm:hrun-conviction-tally
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:114
+    type: supports
+    from: src:echr-cp-iceland
+    to: clm:hrun-aftermath-reopening-and-inquiry
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:115
+    type: supports
+    from: src:ruv-2025-10-24-thetta-helst
+    to: clm:hrun-aftermath-reopening-and-inquiry
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:116
+    type: supports
+    from: src:althingi-thskj-232-158
+    to: clm:hrun-aftermath-reopening-and-inquiry
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:117
+    type: cites
+    from: clm:iceland-post-2008-prosecutions
+    to: cnf:transparency-without-amnesty
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:118
+    type: cites
+    from: clm:hrun-aftermath-reopening-and-inquiry
+    to: cnf:transparency-without-amnesty
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:119
+    type: cites
+    from: clm:landsdomur-haarde-2012
+    to: cnf:transparency-without-amnesty
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
+    status: active
+  - id: e:120
+    type: cites
+    from: clm:al-thani-sentences-and-echr
+    to: dsn:challengeable-flags
+    created: 2026-10-24
+    provenance: "Claude Fable 5.1 (claude-fable-5-1), research brief 2026-10-24, docs/research/prior-art-index.md entry 14"
     status: active
