@@ -223,7 +223,7 @@ nodes:
     retention: permanent
 
   - id: clm:samtalid-held-2026-10-10
-    type: claim
+    type: axiom-candidate
     label: "A national dialogue (Tölum saman) was held on 2026-10-10 at 23 sites in Iceland at the initiative of President Halla Tómasdóttir, with results presented at Harpa on 2026-10-11."
     created: 2026-10-23
     provenance: "docs/research/prior-art-index.md entry 8"
@@ -420,7 +420,7 @@ nodes:
     retention: permanent
 
   - id: clm:taiwan-join-response-obligation
-    type: claim
+    type: axiom-candidate
     label: "Taiwan's Join platform (NDC, since 2015): a proposal with 5,000 endorsements within 60 days becomes a case; the responsible agency must publish a reasoned response (adopted, partly, under study, rejected) within two months, extendable once by two months (Directions points 7 and 8)."
     created: 2026-10-23
     provenance: "docs/research/prior-art-index.md entry 11"
@@ -895,7 +895,7 @@ nodes:
     retention: permanent
 
   - id: clm:join-pass-rate
-    type: claim
+    type: axiom-candidate
     label: "Join pass rate: 162 of 11,125 endorsed proposals reached 5,000 in 2020-2024 (about 1.5%, counted from NDC open data); 127 of 2,135 (5.95%) from Sept 2015 to Jan 2018 (Lin, Wang and Wang 2020); 289 of 13,853 by June 2022 (Bertelsmann)."
     created: 2026-10-24
     provenance: "docs/research/prior-art-index.md entry 11"
@@ -1298,7 +1298,7 @@ nodes:
     retention: permanent
 
   - id: clm:hrun-aftermath-reopening-and-inquiry
-    type: claim
+    type: axiom-candidate
     label: "The last Icelandic crash case concluded in 2021; one Landsbanki conviction was reopened and ended in acquittal (RÚV 2025); ECHR found further Article 6 violations (Diego 2022) and struck out five cases after settlements (2021); in 2026 fourteen MPs moved to appoint a commission to investigate the special prosecutor's conduct."
     created: 2026-10-24
     provenance: "docs/research/prior-art-index.md entry 14"
