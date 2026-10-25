@@ -38,4 +38,12 @@ Three primitives:
 - [Graph schema](docs/graph-schema.md) and [seed data](graph/graph.yaml)
 - [Slide Deck Outline](docs/slide-deck-outline.md) (organism metaphor and cascade for deeper exploration)
 
+## Licensing
+
+Documentation, research notes, manifestos, and other written content are under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0). Attribution is required.
+
+Source files, scripts, and configuration files are under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html) (AGPL-3.0).
+
+Which paths and file types each license covers is set out in [LICENSE](LICENSE). The verbatim texts are [LICENSES/CC-BY-4.0.txt](LICENSES/CC-BY-4.0.txt) and [LICENSES/AGPL-3.0.txt](LICENSES/AGPL-3.0.txt).
+
 Start small. One node. One table. One honest record.
