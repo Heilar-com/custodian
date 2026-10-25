@@ -33,6 +33,8 @@ Three primitives:
 - [Behavioural metadata](docs/behavioural-metadata.md)
 - [Challengeable flags](docs/challengeable-flags.md)
 - [Participant classes and seed path](docs/participant-classes.md)
+- [Handoff: from discourse map to agenda](docs/handoff.md) (proposal)
+- [Adversary model](docs/adversary.md) (proposal)
 - [Graph schema](docs/graph-schema.md) and [seed data](graph/graph.yaml)
 - [Slide Deck Outline](docs/slide-deck-outline.md) (organism metaphor and cascade for deeper exploration)
 
