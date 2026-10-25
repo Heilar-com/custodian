@@ -1,6 +1,6 @@
 # Graph schema
 
-How Custodian records claims, sources, design items and decisions as a graph. This is a schema document. Seed data following it lives in [graph/graph.yaml](../graph/graph.yaml). No code reads it yet.
+How Custodian records claims, sources, design items and decisions as a graph. This is a schema document. Seed data following it lives in [graph/graph.yaml](../graph/graph.yaml). [graph/check.py](../graph/check.py) validates that file against this schema and computes the axiom rule below; see [graph/README.md](../graph/README.md).
 
 ## Node types
 
@@ -34,7 +34,7 @@ Edges are directed and carry their own `id`, `created`, `provenance` and `status
 | `type` | one of the node types above | |
 | `label` | short plain-language text | Neutral wording (see agents.md). |
 | `created` | ISO 8601 date | |
-| `provenance` | author, agent or document that created the node | For agents, include the agent name and model or tool version. |
+| `provenance` | who stands behind the content | For a `source`: the publisher, institution or author group (for example `Alþingi`, `RÚV`, `Gibson`). For a `claim`: the index entry or repo document it was taken from. For other nodes: the person or document that made the statement. Never the agent, tool or model that typed the node; git history records that (decision of 2026-10-25). Spell one organisation one way: the axiom rule compares these strings. A detector flag is the one case where the detector and its version are the provenance, because the detector is what stands behind the flag (see [challengeable-flags.md](challengeable-flags.md)). |
 | `status` | `active`, `disputed`, `superseded`, `withdrawn` | `superseded` and `withdrawn` nodes stay in the graph. |
 | `verification_tier` | see below | Required on every node. |
 | `verification_status` | `confirmed`, `self-description`, `not-verified` | Same markers as the prior-art index. |
@@ -69,6 +69,7 @@ Two supporting nodes are **independent** only if all of these hold:
 
 Operational checks:
 - Count only `supports` edges with `status: active`.
+- Rule 4 compares `provenance` strings as written: two supporters with the same string are the same organisation or author group.
 - `n/a` is not a tier for this rule.
 - Any active `contradicts` edge does not remove axiom-candidate status, but it must be shown next to it, and the node's `status` becomes `disputed`.
 - Axiom-candidate status is recomputed when edges change. It is never set by hand.

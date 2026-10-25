@@ -35,7 +35,7 @@ Three primitives:
 - [Participant classes and seed path](docs/participant-classes.md)
 - [Handoff: from discourse map to agenda](docs/handoff.md) (proposal)
 - [Adversary model](docs/adversary.md) (proposal)
-- [Graph schema](docs/graph-schema.md) and [seed data](graph/graph.yaml)
+- [Graph schema](docs/graph-schema.md), [seed data](graph/graph.yaml) and the [checker](graph/README.md)
 - [Slide Deck Outline](docs/slide-deck-outline.md) (organism metaphor and cascade for deeper exploration)
 
 ## Licensing
