@@ -179,16 +179,16 @@ class AxiomRuleTests(unittest.TestCase):
         _, out, _ = run(data)
         self.assertIn("all supports share tier news-outlet -> does not qualify", out)
 
-    def test_rule_four_literal_versus_off(self):
-        data = {"nodes": [node("src:a", "source", "news-outlet", provenance="same agent"),
-                          node("src:b", "source", "institutional-report", provenance="same agent"),
+    def test_rule_four_same_provenance_collapses(self):
+        data = {"nodes": [node("src:a", "source", "news-outlet", provenance="Alþingi"),
+                          node("src:b", "source", "institutional-report", provenance="Alþingi"),
                           node("clm:c", "claim", "institutional-report")],
                 "edges": [edge("e:1", "supports", "src:a", "clm:c"), edge("e:2", "supports", "src:b", "clm:c")]}
         _, out, _ = run(data)
-        self.assertIn("collapsed: rule 4: same provenance string", out)
-        self.assertIn("would qualify with --provenance-rule off", out)
+        self.assertIn("collapsed: rule 4: same provenance (Alþingi)", out)
         self.assertIn("qualify as axiom-candidate: 0", out)
-        _, out, _ = run(data, "--provenance-rule", "off")
+        data["nodes"][1]["provenance"] = "RÚV"
+        _, out, _ = run(data)
         self.assertIn("qualify as axiom-candidate: 1: clm:c", out)
 
     def test_cites_into_claim_is_not_a_support(self):

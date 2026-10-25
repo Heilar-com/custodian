@@ -3,7 +3,6 @@
 
 Usage:
     python3 graph/check.py                      # validate and print the axiom report
-    python3 graph/check.py --provenance-rule off  # read independence rule 4 as publisher-level (see README)
     python3 graph/check.py --write              # also set type/status on qualifying nodes in the YAML
     python3 graph/check.py --strict             # treat warnings as errors
 
@@ -321,8 +320,6 @@ class AxiomResult:
         self.pairs: list[tuple] = []            # (a, b, verdict) for every supporter pair
         self.qualifies = False
         self.witness: tuple | None = None       # (a, b) that qualified
-        self.qualifies_without_rule4 = False
-        self.witness_without_rule4: tuple | None = None
 
 
 def build_indexes(nodes: dict, edges: list):
@@ -361,7 +358,7 @@ def via(actual: str, root_member: str) -> str:
 
 
 def collapse_reason(a: str, b: str, nodes: dict, same_as: UnionFind, derives: dict,
-                    cites: set, use_provenance: bool) -> str | None:
+                    cites: set) -> str | None:
     """Return None if a and b are independent, else which rule collapses them."""
     ra, rb = same_as.find(a), same_as.find(b)
     if ra == rb:
@@ -378,14 +375,13 @@ def collapse_reason(a: str, b: str, nodes: dict, same_as: UnionFind, derives: di
         return f"rule 3: {a} cites {b}"
     if (b, a) in cites:
         return f"rule 3: {b} cites {a}"
-    if use_provenance:
-        pa, pb = norm_provenance(nodes[a].get("provenance", "")), norm_provenance(nodes[b].get("provenance", ""))
-        if pa == pb:
-            return "rule 4: same provenance string"
+    pa, pb = norm_provenance(nodes[a].get("provenance", "")), norm_provenance(nodes[b].get("provenance", ""))
+    if pa == pb:
+        return f"rule 4: same provenance ({pa})"
     return None
 
 
-def compute_axiom(nodes: dict, edges: list, provenance_rule: str) -> dict:
+def compute_axiom(nodes: dict, edges: list) -> dict:
     """Evaluate the axiom rule for every node with incoming active supports edges."""
     same_as, derives, cites = build_indexes(nodes, edges)
     results: dict[str, AxiomResult] = {}
@@ -405,7 +401,6 @@ def compute_axiom(nodes: dict, edges: list, provenance_rule: str) -> dict:
         elif e["type"] == "contradicts":
             result(e["to"]).contradicted_by.append(e)
 
-    use_rule4 = provenance_rule == "literal"
     for nid, r in results.items():
         supporters = sorted({e["from"] for e in r.supports})
         for i, a in enumerate(supporters):
@@ -416,20 +411,14 @@ def compute_axiom(nodes: dict, edges: list, provenance_rule: str) -> dict:
                 elif ta == tb:
                     verdict = f"same tier ({ta})"
                 else:
-                    reason = collapse_reason(a, b, nodes, same_as, derives, cites, use_rule4)
+                    reason = collapse_reason(a, b, nodes, same_as, derives, cites)
                     if reason is None:
                         verdict = f"INDEPENDENT, tiers {ta} + {tb}"
                         if not r.qualifies:
                             r.qualifies, r.witness = True, (a, b)
                     else:
                         verdict = f"collapsed: {reason}"
-                    if use_rule4 and not r.qualifies_without_rule4:
-                        reason3 = collapse_reason(a, b, nodes, same_as, derives, cites, False)
-                        if reason3 is None:
-                            r.qualifies_without_rule4, r.witness_without_rule4 = True, (a, b)
                 r.pairs.append((a, b, verdict))
-        if not use_rule4:
-            r.qualifies_without_rule4, r.witness_without_rule4 = r.qualifies, r.witness
     return results
 
 
@@ -441,17 +430,14 @@ def short(nodes: dict, nid: str) -> str:
     return f"{nid} ({nodes[nid].get('verification_tier')})"
 
 
-def print_axiom_report(nodes: dict, results: dict, provenance_rule: str) -> None:
+def print_axiom_report(nodes: dict, results: dict) -> None:
     print("=" * 78)
     print("AXIOM-CANDIDATE REPORT")
-    print(f"independence rule 4 (provenance): {provenance_rule}"
-          + ("  [literal: node `provenance` strings must differ]" if provenance_rule == "literal"
-             else "  [off: rule 4 not applied; see README]"))
     print("Flags here are claims that can be challenged, not verdicts.")
     print("=" * 78)
 
     eligible = [nid for nid, n in nodes.items() if n.get("type") in ELIGIBLE_TYPES]
-    qualifying, near, would_qualify = [], [], []
+    qualifying, near = [], []
     for nid in eligible:
         n = nodes[nid]
         r = results.get(nid, AxiomResult(nid))
@@ -485,11 +471,6 @@ def print_axiom_report(nodes: dict, results: dict, provenance_rule: str) -> None
         if r.qualifies:
             line += f" via {short(nodes, r.witness[0])} + {short(nodes, r.witness[1])}"
             qualifying.append(nid)
-        elif provenance_rule == "literal" and r.qualifies_without_rule4:
-            a, b = r.witness_without_rule4
-            line += (f"; would qualify with --provenance-rule off via "
-                     f"{short(nodes, a)} + {short(nodes, b)}")
-            would_qualify.append(nid)
         elif len(tiers) >= 2:
             near.append(nid)
         print(line)
@@ -508,9 +489,6 @@ def print_axiom_report(nodes: dict, results: dict, provenance_rule: str) -> None
     print(f"  claims evaluated: {len(eligible)}")
     print(f"  qualify as axiom-candidate: {len(qualifying)}"
           + (": " + ", ".join(qualifying) if qualifying else ""))
-    if provenance_rule == "literal":
-        print(f"  would qualify under rules 1-3 only (--provenance-rule off): {len(would_qualify)}"
-              + (": " + ", ".join(would_qualify) if would_qualify else ""))
     if near:
         print(f"  have supports from two or more tiers but still fail: {len(near)}: " + ", ".join(near))
     disputed = [nid for nid in eligible if results.get(nid) and results[nid].contradicted_by]
@@ -524,8 +502,6 @@ def print_axiom_report(nodes: dict, results: dict, provenance_rule: str) -> None
             flag = ""
             if r.qualifies:
                 flag = f"  <- meets the rule via {r.witness[0]} + {r.witness[1]}"
-            elif provenance_rule == "literal" and r.qualifies_without_rule4:
-                flag = "  <- meets rules 1-3"
             print(f"    {nid} [{nodes[nid].get('type')}]: {len(r.supports)} supports, tiers {tiers}{flag}")
 
 
@@ -624,9 +600,6 @@ def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("file", nargs="?", default=str(Path(__file__).with_name("graph.yaml")),
                         help="path to graph.yaml (default: graph/graph.yaml next to this script)")
-    parser.add_argument("--provenance-rule", choices=("literal", "off"), default="literal",
-                        help="how independence rule 4 reads `provenance`: `literal` compares the node "
-                             "property as written (default); `off` skips rule 4 (see README)")
     parser.add_argument("--write", action="store_true",
                         help="set type: axiom-candidate and status on qualifying nodes in the YAML "
                              "(targeted line edits; comments and anchors are kept)")
@@ -646,11 +619,11 @@ def main(argv=None) -> int:
 
     rep = Report()
     nodes, edges = validate(data, rep)
-    results = compute_axiom(nodes, edges, args.provenance_rule)
+    results = compute_axiom(nodes, edges)
     for nid, node in nodes.items():
         if node.get("type") == "axiom-candidate" and not (nid in results and results[nid].qualifies):
-            rep.warn(f"node {nid}", "is typed `axiom-candidate` in the file but does not meet the rule under "
-                                    f"--provenance-rule {args.provenance_rule}; the status is stale or was set by hand")
+            rep.warn(f"node {nid}", "is typed `axiom-candidate` in the file but does not meet the rule; "
+                                    "the status is stale or was set by hand")
 
     print("=" * 78)
     print(f"VALIDATION of {path}")
@@ -676,7 +649,7 @@ def main(argv=None) -> int:
 
     if not args.no_report:
         print()
-        print_axiom_report(nodes, results, args.provenance_rule)
+        print_axiom_report(nodes, results)
         if args.write:
             print()
             if rep.errors:

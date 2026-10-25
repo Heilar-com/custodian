@@ -31,8 +31,6 @@ Flags:
 
 | Flag | Effect |
 |---|---|
-| `--provenance-rule literal` (default) | Independence rule 4 compares each supporter's `provenance` property as written. Two nodes recorded by the same agent string are not independent. |
-| `--provenance-rule off` | Skips rule 4. The schema's rule 4 is about the source's author group or publishing organisation, which the schema has no property for yet. See "Readings" below. |
 | `--write` | Sets `type: axiom-candidate` on qualifying claims and `status: disputed` on those with an active `contradicts` edge; reverts stale `axiom-candidate` nodes to `claim`. Edits only those lines; comments and anchors stay. Refused while validation has errors. Off by default: the report is the product, the file is Markús's. |
 | `--strict` | Warnings count as errors for the exit code. |
 | `--no-report` | Validation only. |
@@ -52,7 +50,7 @@ Independence is checked per pair of supporters:
 1. Not linked by `same-as`, directly or through a chain (union of all active `same-as` edges).
 2. Neither `derives-from` the other, and they do not both derive from the same node. `derives-from` is followed transitively, and `same-as` groups count as one node along the way.
 3. Neither `cites` the other (a direct active `cites` edge in either direction).
-4. Their `provenance` differs (literal reading, see above), unless `--provenance-rule off`.
+4. Their `provenance` differs. Since the decision of 2026-10-25, `provenance` names who stands behind the content (publisher, institution or author group), so two sources with the same string are the same organisation or author group. Spell one organisation one way.
 
 Only `supports` edges with `status: active` count. The node's own `status` does not affect the count. An active `contradicts` edge never removes the status; the report shows it next to the claim and the claim's status should be `disputed`.
 
@@ -62,8 +60,7 @@ The report is a set of claims that can be challenged, not a verdict ([agents.md]
 
 The schema leaves some things open. The script picks one reading for each and says so here, so the choice can be turned into a `decision` node or overturned. None of these is a decision; Markús decides.
 
-- **Rule 4, "different provenance".** The node property `provenance` records who created the node (mostly the agent that seeded it), but the rule's text is about the source's authors or publisher. The schema has no property for that. Default: compare the property literally. Alternative: `--provenance-rule off`. The report prints both outcomes for every claim.
-- **Same organisation publishing twice.** Under a publisher-level reading, are two Alþingi documents (a committee report and a bill) one provenance or two? The same question applies to two ECHR documents. Not implemented either way until a property exists to hold it.
+- **Rule 4, "different provenance".** Settled on 2026-10-25 (`dec:2026-10-25-provenance-means-publisher`): `provenance` names who stands behind the content, never the agent that typed the node, so the script compares the strings as written. Two Alþingi documents share provenance; an Alþingi document and a RÚV report do not. For academic papers the string is the author group, so two papers by the same authors collapse and two papers in the same journal by different authors do not.
 - **`cites` edges into a claim** are listed as "cited by" and never counted as support, in either direction.
 - **Rule 3 direction and depth.** A `cites` edge between two supporters collapses them whichever way it points. Only direct edges are followed, not chains.
 - **Rule 2 depth.** `derives-from` is followed transitively. The schema says "directly or through a chain" only for `same-as`; the script applies the same to derivation because a summary of a summary still rests on the original.
