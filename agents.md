@@ -38,7 +38,9 @@ Where an older doc disagrees with these rules, these rules and the latest dated 
 Topics emerge from people talking. Research is the mirror that shows what those topics rest on. Do not start from a research agenda and fit people to it.
 
 ## (g) How to change things
-- Open an issue or PR. Do not edit `main` directly. Markús merges.
+- Open an issue or PR. Do not edit `main` directly.
+- Any agent or session working in this repo may merge a PR once it is mergeable and its content follows these rules. Markús decided this on 2026-10-25: the repo is a research notebook, not a running system, and waiting on one person blocked the work. Record the merge as the PR itself; no separate approval is needed.
+- When two open PRs touch the same file, the later one resolves the conflict against `main` before merging. Say so in its description.
 - Log every design decision as a `decision` node in the graph ([docs/graph-schema.md](docs/graph-schema.md), data in [graph/graph.yaml](graph/graph.yaml)), with its tensions as `contradicts` edges or `conflict` nodes.
 - Separate confirmed findings from claims. Cite nothing you have not checked.
 
