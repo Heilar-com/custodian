@@ -1,0 +1,56 @@
+custodian — split license
+
+Copyright (C) 2026 Heilar / Markús Thor and contributors
+
+This repository is under two licenses. The split is by kind of file.
+
+Creative Commons Attribution 4.0 International (CC BY 4.0) covers
+documentation, research notes, manifestos, and every other written
+file. Attribution is required. That requirement is deliberate for a
+civic project: reuse is welcome, and the source of the writing stays
+visible.
+
+CC BY 4.0 applies to everything that is not code. That includes:
+
+- Paths: README.md, primitives.md, docs/, and any other prose added
+  later (notes, outlines, specifications written as documents).
+- File types: Markdown and other written formats, such as .md, .rst,
+  .adoc, and .txt when the file is prose rather than a program,
+  script, or configuration file.
+
+The GNU Affero General Public License v3.0 (AGPL-3.0) covers any code
+that lands in this repository. AGPL-3.0 is used so that a modified
+copy offered as a network service remains available to the people who
+use it. That is the same auditability approach as Pol.is and ZKorum's
+Agora.
+
+AGPL-3.0 applies to code, which means source files, scripts, and
+configs, wherever they sit in the tree:
+
+- Source files, such as .py, .js, .ts, .tsx, .jsx, .go, .rs, .java,
+  .c, .h, .cpp, and other programming-language sources.
+- Scripts, such as shell scripts, Makefiles, and other files meant to
+  be executed.
+- Configs, such as .json, .yaml, .yml, .toml, .ini, Dockerfiles, and
+  other configuration files.
+
+There is no application source in the tree yet. When code is added, it
+is under AGPL-3.0 only.
+
+The license texts themselves are not project writing. Unmodified
+verbatim copies are in this repository:
+
+- LICENSES/CC-BY-4.0.txt — Creative Commons Attribution 4.0
+  International public license, from
+  https://creativecommons.org/licenses/by/4.0/legalcode.txt
+  Creative Commons dedicates that legal-code text to the public domain
+  under CC0. The human-readable license page is
+  https://creativecommons.org/licenses/by/4.0/
+- LICENSES/AGPL-3.0.txt — GNU Affero General Public License, version 3,
+  from https://www.gnu.org/licenses/agpl-3.0.txt
+  The Free Software Foundation permits verbatim copying of that
+  document and does not allow changes to it. The license page is
+  https://www.gnu.org/licenses/agpl-3.0.html
+
+Those two files are the copies distributed with this project. They are
+not paraphrases.
