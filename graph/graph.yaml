@@ -351,7 +351,7 @@ nodes:
     label: "Non-deletion scope: 'never deleted' covers only logged entries (aggregate discourse map and content-free records). Raw speech is erasable by crypto-shredding and each erasure is logged. Commitments must be salted (128-bit or more) or keyed. Pilot order: Alþingi transcripts, then one adult table; no raw recording of minors."
     created: 2026-10-23
     provenance: "Markús, docs/civic-contract-sketch.md, section 'Non-deletion scope (decided 2026-10-23)'"
-    status: active
+    status: disputed
     verification_tier: n/a
     verification_status: self-description
     retention: permanent
@@ -464,7 +464,7 @@ nodes:
     label: "Handoff: the discourse map holds agenda power, not decision power. It decides what must be answered, never what the answer is. Proposed, unbuilt."
     created: 2026-10-23
     provenance: "docs/book-outline.md, proposal 2026-10-23, not a decision"
-    status: active
+    status: disputed
     verification_tier: n/a
     verification_status: self-description
     retention: permanent
@@ -504,7 +504,7 @@ nodes:
     label: "Incentive transparency exposes undisclosed ties. If exposure leads to punishment, disclosure becomes costly and concealment grows, so the record degrades. Thesis of the book outline: transparency requires forgiveness or it produces concealment. Untested."
     created: 2026-10-23
     provenance: "docs/book-outline.md, proposal 2026-10-23, not a decision"
-    status: active
+    status: disputed
     verification_tier: n/a
     verification_status: self-description
     retention: permanent
@@ -524,7 +524,7 @@ nodes:
     label: "A discourse map has no force unless an institution is bound to answer it. Iceland 2011 is the recorded failure at this step (unverified); no Custodian design yet covers it."
     created: 2026-10-23
     provenance: "docs/book-outline.md, proposal 2026-10-23, not a decision"
-    status: active
+    status: disputed
     verification_tier: n/a
     verification_status: self-description
     retention: permanent
@@ -1002,7 +1002,7 @@ nodes:
     label: "Duyx, Urlings, Swaen, Bouter, Zeegers (2017), Scientific citations favor positive results: a systematic review and meta-analysis, J Clin Epidemiol 88, 92-101 (index entry 12)"
     created: 2026-10-24
     provenance: "Duyx, Urlings, Swaen, Bouter and Zeegers"
-    status: active
+    status: disputed
     verification_tier: peer-reviewed-journal
     verification_status: confirmed
     links:
@@ -1324,6 +1324,46 @@ nodes:
     label: "Verifiability wants a record of who stood behind a claim, including who entered it. The provenance decision moves the recorder (person, agent, model) out of the graph into git history, so the graph alone cannot show who typed a node. Detector flags keep detector name and version in their own fields (docs/challengeable-flags.md)."
     created: 2026-10-25
     provenance: "primitives.md read against dec:2026-10-25-provenance-means-publisher"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dec:2026-10-25-agents-may-merge
+    type: decision
+    label: "Any agent or session may merge a PR once it is mergeable and follows agents.md. The repo is a research notebook, not a running system; waiting on one person blocked the work. The later of two PRs touching one file resolves the conflict."
+    created: 2026-10-25
+    provenance: "Markús, chat of 2026-10-25; recorded in agents.md rule (g), PR 20"
+    status: disputed
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dec:2026-10-25-split-licence
+    type: decision
+    label: "Written content is CC BY 4.0; code (source, scripts, configs) is AGPL-3.0, following Pol.is and Agora. LICENSE lists paths and file types. Licence texts are verbatim official copies."
+    created: 2026-10-25
+    provenance: "Markús, PR 6 (docs/licensing), merged 2026-10-25"
+    status: disputed
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:no-second-reader
+    type: conflict
+    label: "Merging without a second reader speeds the notebook but removes the one check on the rule to cite nothing unchecked. The mitigation so far is the checker (graph/check.py) and verification markers in the index; neither reads prose."
+    created: 2026-10-25
+    provenance: "Markús, agents.md rules (g) and the cite-nothing-unchecked rule; tension named by Claude Fable 5.1 in PR, 2026-10-25"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:graph-yaml-licence
+    type: conflict
+    label: "LICENSE puts .yaml files under AGPL-3.0 as configs, but graph/graph.yaml is the research record (claims, sources, decisions), which the licence intends to be CC BY 4.0. Which licence covers the graph data is undecided."
+    created: 2026-10-25
+    provenance: "LICENSE (PR 6) read against graph/graph.yaml; tension named by Claude Fable 5.1, 2026-10-25"
     status: active
     verification_tier: n/a
     verification_status: self-description
@@ -2166,13 +2206,6 @@ edges:
     created: 2026-10-24
     provenance: "docs/research/prior-art-index.md entry 14"
     status: active
-  - id: e:117
-    type: cites
-    from: clm:iceland-post-2008-prosecutions
-    to: cnf:transparency-without-amnesty
-    created: 2026-10-24
-    provenance: "docs/research/prior-art-index.md entry 14"
-    status: active
   - id: e:118
     type: cites
     from: clm:hrun-aftermath-reopening-and-inquiry
@@ -2216,4 +2249,55 @@ edges:
     to: dec:2026-10-25-provenance-means-publisher
     created: 2026-10-25
     provenance: "docs/graph-schema.md, independence rule 4 compares provenance"
+    status: active
+
+  # consistency fixes after graph/check.py (2026-10-25)
+  - id: e:124
+    type: contradicts
+    from: dec:2026-10-23-non-deletion-scope
+    to: dsn:behavioural-metadata
+    created: 2026-10-25
+    provenance: "Markús, docs/behavioural-metadata.md Unresolved: per-speaker behaviour is not content-free, so the decision gives grounds against the chain placement"
+    status: active
+  - id: e:125
+    type: contradicts
+    from: prm:disagreement-preserved
+    to: dsn:on-demand-speaker-scores
+    created: 2026-10-25
+    provenance: "Markús, docs/challengeable-flags.md open question: a speaker-level score resolves disagreement on the reader's behalf"
+    status: active
+  - id: e:126
+    type: contradicts
+    from: cnf:no-second-reader
+    to: dec:2026-10-25-agents-may-merge
+    created: 2026-10-25
+    provenance: "Markús, agents.md"
+    status: active
+  - id: e:127
+    type: cites
+    from: dec:2026-10-25-agents-may-merge
+    to: cnf:no-second-reader
+    created: 2026-10-25
+    provenance: "Markús, agents.md"
+    status: active
+  - id: e:128
+    type: cites
+    from: dec:2026-10-25-split-licence
+    to: cnf:graph-yaml-licence
+    created: 2026-10-25
+    provenance: "LICENSE"
+    status: active
+  - id: e:129
+    type: contradicts
+    from: cnf:graph-yaml-licence
+    to: dec:2026-10-25-split-licence
+    created: 2026-10-25
+    provenance: "LICENSE"
+    status: active
+  - id: e:130
+    type: derives-from
+    from: dec:2026-10-25-agents-may-merge
+    to: dec:2026-10-25-provenance-means-publisher
+    created: 2026-10-25
+    provenance: "Markús, chat of 2026-10-25: both decisions came from the same conversation about how the notebook is kept"
     status: active
