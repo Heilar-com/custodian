@@ -1369,6 +1369,300 @@ nodes:
     verification_status: self-description
     retention: permanent
 
+  # ---- vision 2026-10-26: diary, commons and coin (proposal, not a decision) --
+  # From docs/visions/diary-commons-and-coin.md. Sui, Walrus, Seal and Vana
+  # sources are the projects' own documentation (self-description). Studies
+  # were checked against their abstracts on 2026-10-26.
+
+  - id: src:walrus-docs-blobs
+    type: source
+    label: "Walrus documentation: 'Using the Walrus client' and 'Managing blobs' (public blobs, deletable blobs, limits of deletion)"
+    created: 2026-10-26
+    provenance: "Walrus"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    links:
+      - https://docs.wal.app/docs/usage/client-cli
+      - https://docs.wal.app/docs/walrus-client/managing-blobs
+    retention: permanent
+
+  - id: src:seal-docs
+    type: source
+    label: "Seal documentation: overview, design and security best practices"
+    created: 2026-10-26
+    provenance: "Mysten Labs"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    links:
+      - https://docs.sui.io/sui-stack/seal
+      - https://github.com/MystenLabs/seal/blob/main/docs/content/SecurityBestPractices.mdx
+      - https://github.com/MystenLabs/seal/blob/main/docs/content/Design.mdx
+    retention: permanent
+
+  - id: src:sui-docs-custom-transfer-rules
+    type: source
+    label: "Sui documentation: custom transfer rules for objects with key but not store"
+    created: 2026-10-26
+    provenance: "Sui documentation"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    links:
+      - https://docs.sui.io/concepts/transfers/custom-rules
+    retention: permanent
+
+  - id: src:vana-docs-poc
+    type: source
+    label: "Vana documentation: Proof of Contribution"
+    created: 2026-10-26
+    provenance: "Vana"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    links:
+      - https://docs.vana.org/data-applications/proof-of-contribution.md
+    retention: permanent
+
+  - id: src:thelwall-2017-jis
+    type: source
+    label: "Thelwall (2017), 'Can social news websites pay for content and curation? The SteemIt cryptocurrency model', Journal of Information Science 44(6), 736-751"
+    created: 2026-10-26
+    provenance: "Thelwall"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    links:
+      - https://doi.org/10.1177/0165551517748290
+    retention: permanent
+
+  - id: src:li-palanisamy-2019
+    type: source
+    label: "Li and Palanisamy (2019), 'Incentivized Blockchain-based Social Media Platforms: A Case Study of Steemit', arXiv:1904.07310 (accepted at ACM WebSci 2019, per arXiv comment)"
+    created: 2026-10-26
+    provenance: "Li, Palanisamy"
+    status: active
+    verification_tier: preprint
+    verification_status: confirmed
+    links:
+      - https://arxiv.org/abs/1904.07310
+    retention: permanent
+
+  - id: src:gneezy-rustichini-2000-qje
+    type: source
+    label: "Gneezy and Rustichini (2000), 'Pay Enough or Don't Pay at All', Quarterly Journal of Economics 115(3), 791-810"
+    created: 2026-10-26
+    provenance: "Gneezy, Rustichini"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    links:
+      - https://doi.org/10.1162/003355300554917
+    retention: permanent
+
+  - id: src:buterin-hitzig-weyl-2019-mnsc
+    type: source
+    label: "Buterin, Hitzig and Weyl (2019), 'A Flexible Design for Funding Public Goods', Management Science 65(11), 5171-5187"
+    created: 2026-10-26
+    provenance: "Buterin, Hitzig, Weyl"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    links:
+      - https://doi.org/10.1287/mnsc.2019.3337
+    retention: permanent
+
+  - id: clm:walrus-blobs-public-deletion-limited
+    type: claim
+    label: "All Walrus blobs are public. Deleting one removes slivers from current storage nodes only, not from caches, past storage nodes or copies others uploaded; the docs say deletion 'has limited utility for privacy'."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md (Walrus docs)"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    retention: permanent
+
+  - id: clm:seal-revocation-cannot-recall-keys
+    type: claim
+    label: "In Seal, revoking access onchain stops future key requests but cannot take back keys a user already fetched. The key server derives one fixed key per id, and key delivery leaves no onchain log."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md (Seal docs)"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    retention: permanent
+
+  - id: clm:sui-store-less-objects-module-transfer
+    type: claim
+    label: "A Sui object with key but without store cannot be moved with public_transfer; only the module that defines it can transfer it, so a credential its holder cannot sell can be built."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md (Sui docs)"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    retention: permanent
+
+  - id: clm:vana-per-contributor-score-onchain
+    type: claim
+    label: "Vana's Proof of Contribution scores each contribution from 0 to 1 in a TEE; the score is often written onchain so the pool can compute how many tokens to issue to the contributor."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md (Vana docs)"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    retention: permanent
+
+  - id: clm:steemit-pay-rewarded-personal-posts
+    type: claim
+    label: "On Steemit, new members' first posts earned US$0.01 on average; longer, more positive posts with personal information earned more than informational or topical content (925,092 posts)."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md (Thelwall 2017)"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:steemit-bot-curators
+    type: claim
+    label: "On Steemit, 2016-03 to 2018-08, more than 16% of cryptocurrency transfers went to curators suspected to be bots, with a supply network behind them; decentralisation was far below the ideal level."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md (Li and Palanisamy 2019)"
+    status: active
+    verification_tier: preprint
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:small-pay-can-lower-performance
+    type: claim
+    label: "The effect of pay on performance is not monotonic: larger payments gave higher performance, but offering money sometimes lowered performance below that of people offered nothing."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md (Gneezy and Rustichini 2000)"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    retention: permanent
+
+  - id: clm:quadratic-funding-design
+    type: claim
+    label: "Quadratic funding gives a public good (proportional to) the square of the sum of the square roots of contributions; under the standard model this gives first-best provision. Designed for philanthropic or public seeding; variations limit cost and collusion."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md (Buterin, Hitzig and Weyl 2019)"
+    status: active
+    verification_tier: peer-reviewed-journal
+    verification_status: confirmed
+    retention: permanent
+
+  - id: dsn:solo-node
+    type: design-item
+    label: "Solo node: one person records a monologue or AI conversation; eID bound to a Sui wallet; raw data on Walrus under the citizen's control; the citizen chooses what to hand to the discourse layer. Vision, not a decision."
+    created: 2026-10-26
+    provenance: "Markús, docs/visions/solo-node-and-reverse-rag.md"
+    status: disputed
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:diary-commons-dividend
+    type: design-item
+    label: "Diary, commons and coin: a private diary under a key only the person holds, a chosen handoff to a public network map, and value paid out without knowing who said what. Vision, not a decision."
+    created: 2026-10-26
+    provenance: "Markús, chat of 2026-10-26; docs/visions/diary-commons-and-coin.md"
+    status: disputed
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:two-asset-split
+    type: design-item
+    label: "Two assets, never mixed: a civic credential that cannot be sold (one per person, governance identity, voice credits in funding rounds) and a transferable coin paid only from a pool. Proposed, not a decision."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:unlinkable-dividend
+    type: design-item
+    label: "Flat dividend with no condition on speech. Where paid per period of participation, redeemed by a zero-knowledge proof of token membership and a nullifier, to a fresh address, in batched windows. Proposed, untested."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:commons-as-author
+    type: design-item
+    label: "Commons as author: a project that grows from the map points its lineage at topics, not people; any royalty goes to the pool, which pays everyone. Proposed, not a decision."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:gap-map
+    type: design-item
+    label: "Gap map: compare, by topic and at network level only, what people write alone with what they say at tables. Proposed, not a decision."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:content-based-payout
+    type: conflict
+    label: "Any payout that depends on what a person said (per entry, per score, per idea used) needs a record joining words to a wallet, against rules (d) and (e), and a judgment of value, against rule (c). Content-neutral payouts avoid this but do not reward ideas."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md read against agents.md rules (c), (d), (e)"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:walrus-seal-erasure
+    type: conflict
+    label: "Raw speech must stay erasable by crypto-shredding. Walrus deletion leaves copies, and Seal cannot take back fetched keys. Erasure holds only for a key the person alone ever held."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md read against docs/civic-contract-sketch.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:no-source-of-value
+    type: conflict
+    label: "The vision pays participants but names no source of money. Issuing the coin pays early holders from later buyers; selling map access makes buyers ties of the mirror; a public pool gives the map decision power over money."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:tradable-coin-vs-non-sellable-weight
+    type: conflict
+    label: "A tradable coin carries influence to whoever buys most; civic.vote_weight in the civic contract sketch calls weight keys non-sellable. The two-asset split is the proposed answer, untested."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md read against docs/civic-contract-sketch.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:map-directed-money-vs-agenda-power
+    type: conflict
+    label: "A funding round over map topics gives the map decision power over money; the handoff principle gives the map agenda power, not decision power."
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md read against docs/handoff.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
 edges:
 
   # sources support claims
@@ -2300,4 +2594,258 @@ edges:
     to: dec:2026-10-25-provenance-means-publisher
     created: 2026-10-25
     provenance: "Markús, chat of 2026-10-25: both decisions came from the same conversation about how the notebook is kept"
+    status: active
+
+  # vision 2026-10-26: diary, commons and coin (proposal, not a decision)
+  - id: e:131
+    type: supports
+    from: src:walrus-docs-blobs
+    to: clm:walrus-blobs-public-deletion-limited
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:132
+    type: supports
+    from: src:seal-docs
+    to: clm:seal-revocation-cannot-recall-keys
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:133
+    type: supports
+    from: src:sui-docs-custom-transfer-rules
+    to: clm:sui-store-less-objects-module-transfer
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:134
+    type: supports
+    from: src:thelwall-2017-jis
+    to: clm:steemit-pay-rewarded-personal-posts
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:135
+    type: supports
+    from: src:li-palanisamy-2019
+    to: clm:steemit-bot-curators
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:136
+    type: supports
+    from: src:gneezy-rustichini-2000-qje
+    to: clm:small-pay-can-lower-performance
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:137
+    type: supports
+    from: src:buterin-hitzig-weyl-2019-mnsc
+    to: clm:quadratic-funding-design
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:138
+    type: supports
+    from: src:vana-docs-poc
+    to: clm:vana-per-contributor-score-onchain
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:139
+    type: derives-from
+    from: dsn:diary-commons-dividend
+    to: dsn:solo-node
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md: extends the solo node with an economic layer"
+    status: active
+  - id: e:140
+    type: derives-from
+    from: dsn:two-asset-split
+    to: dsn:diary-commons-dividend
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:141
+    type: derives-from
+    from: dsn:unlinkable-dividend
+    to: dsn:diary-commons-dividend
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:142
+    type: derives-from
+    from: dsn:commons-as-author
+    to: dsn:diary-commons-dividend
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:143
+    type: derives-from
+    from: dsn:gap-map
+    to: dsn:solo-node
+    created: 2026-10-26
+    provenance: "docs/visions/solo-node-and-reverse-rag.md: comparing channels may show where private and public positions differ"
+    status: active
+  - id: e:144
+    type: supports
+    from: clm:sui-store-less-objects-module-transfer
+    to: dsn:two-asset-split
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:145
+    type: supports
+    from: clm:quadratic-funding-design
+    to: dsn:diary-commons-dividend
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:146
+    type: supports
+    from: clm:steemit-pay-rewarded-personal-posts
+    to: cnf:content-based-payout
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:147
+    type: supports
+    from: clm:steemit-bot-curators
+    to: cnf:content-based-payout
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:148
+    type: supports
+    from: clm:small-pay-can-lower-performance
+    to: cnf:content-based-payout
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:149
+    type: supports
+    from: clm:vana-per-contributor-score-onchain
+    to: cnf:content-based-payout
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:150
+    type: cites
+    from: prm:disagreement-preserved
+    to: cnf:content-based-payout
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md: a judgment of which words were valuable resolves for the reader"
+    status: active
+  - id: e:151
+    type: cites
+    from: dsn:commons-as-author
+    to: cnf:content-based-payout
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md: proposed answer"
+    status: active
+  - id: e:152
+    type: supports
+    from: clm:walrus-blobs-public-deletion-limited
+    to: cnf:walrus-seal-erasure
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:153
+    type: supports
+    from: clm:seal-revocation-cannot-recall-keys
+    to: cnf:walrus-seal-erasure
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:154
+    type: cites
+    from: dsn:civic-erasure-crypto-shredding
+    to: cnf:walrus-seal-erasure
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:155
+    type: cites
+    from: dec:2026-10-23-non-deletion-scope
+    to: cnf:walrus-seal-erasure
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:156
+    type: cites
+    from: dsn:solo-node
+    to: cnf:walrus-seal-erasure
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:157
+    type: contradicts
+    from: cnf:walrus-seal-erasure
+    to: dsn:solo-node
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md: raw data on Walrus is not erasable once any party fetched a key"
+    status: active
+  - id: e:158
+    type: cites
+    from: dsn:diary-commons-dividend
+    to: cnf:no-source-of-value
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:159
+    type: cites
+    from: dsn:self-applied-incentive-transparency
+    to: cnf:no-source-of-value
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md: buyers of map access are ties of the mirror"
+    status: active
+  - id: e:160
+    type: contradicts
+    from: cnf:no-source-of-value
+    to: dsn:diary-commons-dividend
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:161
+    type: cites
+    from: dsn:two-asset-split
+    to: cnf:tradable-coin-vs-non-sellable-weight
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md: proposed answer"
+    status: active
+  - id: e:162
+    type: cites
+    from: dsn:diary-commons-dividend
+    to: cnf:tradable-coin-vs-non-sellable-weight
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:163
+    type: cites
+    from: dsn:handoff-agenda-power
+    to: cnf:map-directed-money-vs-agenda-power
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:164
+    type: cites
+    from: dsn:diary-commons-dividend
+    to: cnf:map-directed-money-vs-agenda-power
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:165
+    type: contradicts
+    from: cnf:map-directed-money-vs-agenda-power
+    to: dsn:diary-commons-dividend
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md"
+    status: active
+  - id: e:166
+    type: cites
+    from: dsn:unlinkable-dividend
+    to: dsn:adversary-model
+    created: 2026-10-26
+    provenance: "docs/visions/diary-commons-and-coin.md: attack 6, timing correlation, untested"
     status: active
