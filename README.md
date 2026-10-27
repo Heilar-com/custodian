@@ -36,7 +36,7 @@ Three primitives:
 - [Handoff: from discourse map to agenda](docs/handoff.md) (proposal)
 - [Adversary model](docs/adversary.md) (proposal)
 - [Graph schema](docs/graph-schema.md), [seed data](graph/graph.yaml) and the [checker](graph/README.md)
-- Visions (hypotheses, not decisions): [Solo node and AI-as-questioner](docs/visions/solo-node-and-reverse-rag.md), [Diary, commons and coin](docs/visions/diary-commons-and-coin.md)
+- Visions (hypotheses, not decisions): [Solo node and AI-as-questioner](docs/visions/solo-node-and-reverse-rag.md), [Idea farm](docs/visions/idea-farm.md), [Diary, commons and coin](docs/visions/diary-commons-and-coin.md) (superseded)
 - [Slide Deck Outline](docs/slide-deck-outline.md) (organism metaphor and cascade for deeper exploration)
 
 ## Licensing

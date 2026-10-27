@@ -1,5 +1,7 @@
 # Diary, commons and coin (vision / hypothesis)
 
+> **Superseded on 2026-10-27** by [Idea farm](idea-farm.md). Markús decided the platform is not about money and does not store diaries. This document stays as the record of the money exploration. Its findings on Walrus, Seal and paid posting still hold.
+
 **Status:** Vision. Markús raised it in chat on 2026-10-26 and asked to explore it freely. Under the Experimental Posture ([agents.md](../../agents.md)) it is a hypothesis. It is not a decision, and nothing here is built. It extends [Solo node and AI-as-questioner](solo-node-and-reverse-rag.md) with an economic layer.
 
 Facts about Sui, Walrus and Seal were checked against the projects' own documentation on 2026-10-26. They are self-description: they say what the systems are designed to do. Nothing was tested. Studies were checked against their published abstracts. Markers follow the [prior-art index](../research/prior-art-index.md).
