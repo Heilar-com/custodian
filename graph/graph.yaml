@@ -1568,7 +1568,7 @@ nodes:
     label: "Diary, commons and coin: a private diary under a key only the person holds, a chosen handoff to a public network map, and value paid out without knowing who said what. Vision, not a decision."
     created: 2026-10-26
     provenance: "Markús, chat of 2026-10-26; docs/visions/diary-commons-and-coin.md"
-    status: disputed
+    status: superseded
     verification_tier: n/a
     verification_status: self-description
     retention: permanent
@@ -1578,7 +1578,7 @@ nodes:
     label: "Two assets, never mixed: a civic credential that cannot be sold (one per person, governance identity, voice credits in funding rounds) and a transferable coin paid only from a pool. Proposed, not a decision."
     created: 2026-10-26
     provenance: "docs/visions/diary-commons-and-coin.md"
-    status: active
+    status: superseded
     verification_tier: n/a
     verification_status: self-description
     retention: permanent
@@ -1588,7 +1588,7 @@ nodes:
     label: "Flat dividend with no condition on speech. Where paid per period of participation, redeemed by a zero-knowledge proof of token membership and a nullifier, to a fresh address, in batched windows. Proposed, untested."
     created: 2026-10-26
     provenance: "docs/visions/diary-commons-and-coin.md"
-    status: active
+    status: superseded
     verification_tier: n/a
     verification_status: self-description
     retention: permanent
@@ -1598,7 +1598,7 @@ nodes:
     label: "Commons as author: a project that grows from the map points its lineage at topics, not people; any royalty goes to the pool, which pays everyone. Proposed, not a decision."
     created: 2026-10-26
     provenance: "docs/visions/diary-commons-and-coin.md"
-    status: active
+    status: superseded
     verification_tier: n/a
     verification_status: self-description
     retention: permanent
@@ -1658,6 +1658,207 @@ nodes:
     label: "A funding round over map topics gives the map decision power over money; the handoff principle gives the map agenda power, not decision power."
     created: 2026-10-26
     provenance: "docs/visions/diary-commons-and-coin.md read against docs/handoff.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  # ---- decisions and vision 2026-10-27: idea farm ---------------------------
+  # From docs/visions/idea-farm.md. The three dec: nodes are Markús's; every
+  # dsn: node is a proposal, not a decision.
+
+  - id: dec:2026-10-27-not-about-money
+    type: decision
+    label: "The platform is not about money: no coin, no dividend, no payment for taking part."
+    created: 2026-10-27
+    provenance: "Markús, chat of 2026-10-27"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dec:2026-10-27-extracts-not-diaries
+    type: decision
+    label: "The platform does not store diaries, encrypted or not. It keeps only the extracts a person approves."
+    created: 2026-10-27
+    provenance: "Markús, chat of 2026-10-27"
+    status: disputed
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dec:2026-10-27-anonymity
+    type: decision
+    label: "Anonymity is part of the design: taking part is anonymous by default."
+    created: 2026-10-27
+    provenance: "Markús, chat of 2026-10-27"
+    status: disputed
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: src:sui-docs-exchange-integration
+    type: source
+    label: "Sui documentation: exchange integration guide (address derivation)"
+    created: 2026-10-27
+    provenance: "Sui documentation"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    links:
+      - https://docs.sui.io/guides/operator/exchange-integration
+    retention: permanent
+
+  - id: src:tttc-light-js
+    type: source
+    label: "Talk to the City, AI Objectives Institute: GitHub repository tttc-light-js (Apache-2.0)"
+    created: 2026-10-27
+    provenance: "AI Objectives Institute"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    links:
+      - https://github.com/AIObjectives/tttc-light-js
+      - https://ai.objectives.institute/talk-to-the-city
+    retention: permanent
+
+  - id: src:atproto-overview
+    type: source
+    label: "AT Protocol documentation: protocol overview"
+    created: 2026-10-27
+    provenance: "AT Protocol documentation"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    links:
+      - https://atproto.com/guides/overview
+    retention: permanent
+
+  - id: clm:sui-address-from-public-key
+    type: claim
+    label: "For Ed25519, Secp256k1, Secp256r1 and passkey keys, a Sui address is the BLAKE2b-256 hash of a one-byte scheme flag followed by the public key; multisig and zkLogin differ."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md (Sui docs)"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    retention: permanent
+
+  - id: clm:tttc-aggregates-claims
+    type: claim
+    label: "Talk to the City is an open-source LLM tool that aggregates responses and organises similar claims into a nested tree of topics and subtopics."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md (Talk to the City)"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    retention: permanent
+
+  - id: clm:atproto-signed-portable-repos
+    type: claim
+    label: "AT Protocol keeps user data in signed repositories, like Git repos for records, on Personal Data Servers; an account can move to a new server without the old server's involvement."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md (AT Protocol docs)"
+    status: active
+    verification_tier: creator-content
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:idea-farm
+    type: design-item
+    label: "Idea farm: people talk alone or in small communities; their own agent drafts extracts they approve; extracts form a shared graph that agents read; ideas carry one-time keys; anonymous, no money. Vision, not a decision."
+    created: 2026-10-27
+    provenance: "Markús, chat of 2026-10-27; docs/visions/idea-farm.md"
+    status: disputed
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:person-approved-extract
+    type: design-item
+    label: "The extract is the only thing that leaves a person's device. The person approves, edits or drops each draft. It carries community, week and extractor model and version; never author, wallet or device. Proposed."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:idea-keys
+    type: design-item
+    label: "Each idea or need gets a fresh key pair; the public key (a one-time Sui address) goes with it. The holder can prove origin, receive encrypted contact, and link the key to a wallet only by choice. Proposed."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: disputed
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:agent-assessments-as-claims
+    type: design-item
+    label: "Agents from several providers attach assessments to ideas as claims with agent, model and version; no stored score, nothing hidden; each reader's own agent ranks for that reader. Proposed."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:person-held-matching
+    type: design-item
+    label: "Need and offer extracts carry keys; the person's own agent finds matches and proposes them to the person only; contact is encrypted to the key; the platform keeps no record of the match. Proposed."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: dsn:agent-read-interface
+    type: design-item
+    label: "Agents read the pool through an interface such as an MCP server; agents write only through a person who approves an extract and spends a token. Proposed."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:extract-only-vs-raw-signal
+    type: conflict
+    label: "The manifesto values the raw words and hesitations; the platform keeps only what each person approves. What is not extracted is gone, and no trail leads from an extract back to the words."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md read against docs/manifesto.md"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:agents-judge-ideas
+    type: conflict
+    label: "Agents reasoning about which ideas are good is a verdict, against rule (c). Assessments as claims and reader-side ranking are the proposed answer; a network-wide well-grounded view is still a soft verdict."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md read against agents.md rule (c)"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:claimed-attribution-vs-rule-d
+    type: conflict
+    label: "A person's voluntary link from an idea key to a wallet is per-person data; written to a chain it is permanent, against rule (d)."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md read against agents.md rule (d)"
+    status: active
+    verification_tier: n/a
+    verification_status: self-description
+    retention: permanent
+
+  - id: cnf:anonymity-in-small-communities
+    type: conflict
+    label: "Anonymity is a requirement, but small communities, the content of an extract and writing style can identify a person."
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md read against docs/adversary.md attack 5"
     status: active
     verification_tier: n/a
     verification_status: self-description
@@ -2848,4 +3049,272 @@ edges:
     to: dsn:adversary-model
     created: 2026-10-26
     provenance: "docs/visions/diary-commons-and-coin.md: attack 6, timing correlation, untested"
+    status: active
+
+  # idea farm 2026-10-27 (Markús's three decisions; the rest proposals)
+  - id: e:167
+    type: supports
+    from: src:sui-docs-exchange-integration
+    to: clm:sui-address-from-public-key
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:168
+    type: supports
+    from: src:tttc-light-js
+    to: clm:tttc-aggregates-claims
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:169
+    type: supports
+    from: src:atproto-overview
+    to: clm:atproto-signed-portable-repos
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:170
+    type: cites
+    from: dec:2026-10-27-not-about-money
+    to: cnf:content-based-payout
+    created: 2026-10-27
+    provenance: "Markús, chat of 2026-10-27: addresses it by dropping payment"
+    status: active
+  - id: e:171
+    type: cites
+    from: dec:2026-10-27-not-about-money
+    to: cnf:no-source-of-value
+    created: 2026-10-27
+    provenance: "Markús, chat of 2026-10-27: addresses it by dropping payment"
+    status: active
+  - id: e:172
+    type: cites
+    from: dec:2026-10-27-not-about-money
+    to: cnf:tradable-coin-vs-non-sellable-weight
+    created: 2026-10-27
+    provenance: "Markús, chat of 2026-10-27: addresses it by dropping the coin"
+    status: active
+  - id: e:173
+    type: cites
+    from: dec:2026-10-27-not-about-money
+    to: cnf:map-directed-money-vs-agenda-power
+    created: 2026-10-27
+    provenance: "Markús, chat of 2026-10-27: addresses it by dropping funding rounds"
+    status: active
+  - id: e:174
+    type: supports
+    from: clm:small-pay-can-lower-performance
+    to: dec:2026-10-27-not-about-money
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:175
+    type: cites
+    from: dec:2026-10-27-extracts-not-diaries
+    to: cnf:walrus-seal-erasure
+    created: 2026-10-27
+    provenance: "Markús, chat of 2026-10-27: no raw diary on the platform to erase"
+    status: active
+  - id: e:176
+    type: cites
+    from: dec:2026-10-27-extracts-not-diaries
+    to: cnf:extract-only-vs-raw-signal
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:177
+    type: contradicts
+    from: cnf:extract-only-vs-raw-signal
+    to: dec:2026-10-27-extracts-not-diaries
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:178
+    type: contradicts
+    from: dec:2026-10-27-extracts-not-diaries
+    to: dsn:solo-node
+    created: 2026-10-27
+    provenance: "Markús, chat of 2026-10-27: the solo node's raw data on Walrus is no longer stored"
+    status: active
+  - id: e:179
+    type: cites
+    from: prm:verifiability
+    to: cnf:extract-only-vs-raw-signal
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md: no trail from extract to words"
+    status: active
+  - id: e:180
+    type: cites
+    from: dsn:person-approved-extract
+    to: cnf:extract-only-vs-raw-signal
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md: proposed answer, the person edits their own extract"
+    status: active
+  - id: e:181
+    type: cites
+    from: dec:2026-10-27-anonymity
+    to: cnf:anonymity-in-small-communities
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:182
+    type: contradicts
+    from: cnf:anonymity-in-small-communities
+    to: dec:2026-10-27-anonymity
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:183
+    type: cites
+    from: dsn:adversary-model
+    to: cnf:anonymity-in-small-communities
+    created: 2026-10-27
+    provenance: "docs/adversary.md attack 5"
+    status: active
+  - id: e:184
+    type: derives-from
+    from: dsn:idea-farm
+    to: dsn:diary-commons-dividend
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md: replaces its money layer"
+    status: active
+  - id: e:185
+    type: cites
+    from: dsn:idea-farm
+    to: dec:2026-10-27-not-about-money
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:186
+    type: cites
+    from: dsn:idea-farm
+    to: dec:2026-10-27-extracts-not-diaries
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:187
+    type: cites
+    from: dsn:idea-farm
+    to: dec:2026-10-27-anonymity
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:188
+    type: derives-from
+    from: dsn:person-approved-extract
+    to: dsn:idea-farm
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:189
+    type: derives-from
+    from: dsn:idea-keys
+    to: dsn:idea-farm
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:190
+    type: derives-from
+    from: dsn:idea-keys
+    to: dsn:commons-as-author
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md: credit along lineage, without money"
+    status: active
+  - id: e:191
+    type: derives-from
+    from: dsn:agent-assessments-as-claims
+    to: dsn:idea-farm
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:192
+    type: derives-from
+    from: dsn:agent-assessments-as-claims
+    to: dsn:challengeable-flags
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md: same pattern as detector flags"
+    status: active
+  - id: e:193
+    type: derives-from
+    from: dsn:person-held-matching
+    to: dsn:idea-farm
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:194
+    type: derives-from
+    from: dsn:agent-read-interface
+    to: dsn:idea-farm
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:195
+    type: supports
+    from: clm:sui-address-from-public-key
+    to: dsn:idea-keys
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:196
+    type: supports
+    from: clm:tttc-aggregates-claims
+    to: dsn:person-approved-extract
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md: extraction of claims from responses works in practice"
+    status: active
+  - id: e:197
+    type: supports
+    from: clm:atproto-signed-portable-repos
+    to: dsn:idea-farm
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md: a federation candidate"
+    status: active
+  - id: e:198
+    type: cites
+    from: dsn:person-held-matching
+    to: dsn:per-proposal-join-keys
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md: answers its open question in the person-held direction"
+    status: active
+  - id: e:199
+    type: cites
+    from: dsn:agent-assessments-as-claims
+    to: cnf:agents-judge-ideas
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md: proposed answer"
+    status: active
+  - id: e:200
+    type: cites
+    from: prm:disagreement-preserved
+    to: cnf:agents-judge-ideas
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:201
+    type: contradicts
+    from: cnf:agents-judge-ideas
+    to: dsn:idea-farm
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:202
+    type: cites
+    from: dsn:agent-assessments-as-claims
+    to: cnf:matching-ai-as-undisclosed-tie
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md: each model provider is a tie"
+    status: active
+  - id: e:203
+    type: cites
+    from: dsn:idea-keys
+    to: cnf:claimed-attribution-vs-rule-d
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
+    status: active
+  - id: e:204
+    type: contradicts
+    from: cnf:claimed-attribution-vs-rule-d
+    to: dsn:idea-keys
+    created: 2026-10-27
+    provenance: "docs/visions/idea-farm.md"
     status: active
