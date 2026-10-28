@@ -1,6 +1,6 @@
 # Custodian Organism Slide Deck Outline
 
-> Note: The organism metaphor (research integrity gaps as cascade, nodes as independent verification) is for deeper exploration and visual storytelling. Entry-level materials use clinical language: coherence, integrity gaps, incentive transparency, preserved disagreement.
+> Note: The organism metaphor (research integrity gaps as cascade, nodes as independent verification) is for deeper exploration and visual storytelling. Entry-level materials use clinical language: coherence, integrity gaps, incentive transparency, preserved disagreement. A public cut of the membrane is specified in [video-outline.md](video-outline.md). That cut shows the demon as a projection, then the person. It does not shoot this deck's speaker scores or school beat.
 
 ## Slide 1: Title
 **The Custodian Organism: An Auditable Human Knowledge Network**
