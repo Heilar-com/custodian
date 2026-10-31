@@ -27,6 +27,8 @@ What the zoom is doing. It answers the center by not placing one. A center would
 
 What containers are doing. Society is not a different substance from a person. It is the same picture, larger. A person is not a simple atom inside it. The person opens too.
 
+What a threat is doing. The film can light a pathway: a signal with nothing solid under it, traveling, settling into other people, rearranging the larger graph, with harm showing up somewhere else. Take one person out of the picture and the pathway is still there. That is the system. A clinical word such as psychopathy may be spoken as one name people use for a person at the start of such a pathway. The film does not put that name on a face. The lit path is the shot.
+
 ## The idea, refined
 
 A membrane is a translator. Something happens outside. A worldview writes what it means on the inside. What anyone sees through that skin is never the whole of what is going on. No one has the whole. There is no view from outside all membranes, including the view that built this film and the view that would build the instrument.

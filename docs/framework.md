@@ -104,11 +104,37 @@ A belief-system can be revised. `settles` can still change the person-graph. A r
 
 A belief that the belief-system is finished is the error already named. The system can be a compass. It cannot be the last map.
 
+## Pathway
+
+A pathway is a chain of edges across functions. It is the part that can be a threat. A person-graph is not that part.
+
+A threat-pathway has three marks. Each mark is a claim. Each can be disputed.
+
+1. An output leaves a function without inputs that support it, or the inputs are events of fabrication. A record that does not match what it claims to record is this kind of input. In the metaphorical reading this is false information.
+2. That output reaches other functions and settles into other person-graphs. Inner graphs change.
+3. Edges in the container are rearranged. Some outputs gather toward one place. Harm shows up as events on other graphs.
+
+The test that this is a system: remove any one person-graph, and the pathway still carries the output. The chain is the object. The person is not.
+
+A person-graph can sit at the start of such a pathway. The pattern, when it repeats, is a function that emits unsupported outputs and rearranges edges toward its own outputs, while harm events land elsewhere. Clinical words such as psychopathy are a label for that pattern, in the metaphorical reading. The label is a claim beside the pathway. It is not a node type, not a standing score, and not a diagnosis the record makes. The same person-graph can be read with other maps. The pathway remains either way.
+
+Fabricated records in medicine are one place this picture is easy to see. A made-up input is read as a record. Functions pass it on. Attributions settle into practice. Harm events arrive at people who never made the record. Pointing at a personality is one reading of the start of the chain. The chain is what the graph can show.
+
+What can be looked at, without a verdict:
+
+- How many functions an unsupported output reaches.
+- How many person-graphs it settles into.
+- Whether the chain remains after one person-graph is removed.
+- Which harm events sit downstream.
+- The weight of the edges that exist.
+
+None of these is a score of a person. A highlighted pathway is a drawing until the edges are there to count.
+
 ## Picture
 
 Two ways to show the same frame.
 
-**Structural frame**, for a researcher or a machine. Nodes are person-graphs, functions, inputs, attributions, outputs, containers, and events. Edges are the seven names above. Icons may mark `reads`, `attributes`, and `emits`. Icons do not mark good or evil. State is data.
+**Structural frame**, for a researcher or a machine. Nodes are person-graphs, functions, inputs, attributions, outputs, containers, events, and belief-systems. Edges are the names above. Icons may mark `reads`, `attributes`, and `emits`. A pathway may be lit when its edges are present. Icons do not mark a person as a type. State is data.
 
 **Metaphorical frame**, for a person. A small graph sits inside a ring. Signals leave the ring. A larger ring can form around rings. Demons, angels, and other drawings appear on the inside. Learned displays appear on the outside. A body condition a person offers, such as hunger or an injury, may appear as an icon. Color and the chance to open a node belong to this frame. Color is not a moral grade. The film uses this frame.
 
