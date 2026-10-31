@@ -46,4 +46,4 @@ Each needs a brief with primary sources and a verification marker in the prior-a
 
 ## Set aside
 
-From the earlier scratchpad, not deleted, not in this spine: the Custodian Pathway and AI plus humanity as Earth caretakers; civilizational cycles and monasteries as backups; the monastery node (Faraday, geothermal, glass box). These belong to a different book. Video and voice-first format notes also move out of the outline.
+From the earlier scratchpad, not deleted, not in this spine: the Custodian Pathway and AI plus humanity as Earth caretakers; civilizational cycles and monasteries as backups; the monastery node (Faraday, geothermal, glass box). These belong to a different book. Video and voice-first format notes also move out of the outline. The public-film proposal is [video-outline.md](video-outline.md).
