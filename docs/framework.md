@@ -157,7 +157,7 @@ The film floats on the metaphorical reading. Researchers and machines use the st
 
 A public discourse layer, if one is built, would be free, public, and open source. People fund it by giving. There is no fee. It surfaces records and connects them in more than one arrangement. An arrangement is not a decision. The layer does not decide. There is no split of responsibility among trainers, payers, and users, because those are not roles that issue a verdict here.
 
-A container may be a sphere: people of one age, one kind of work, or another class, talking together. A sphere is a place. It is not a gate. Everyone may talk.
+A container may be a sphere: people of one age, one kind of work, or another class, talking together. A sphere is a scoped ontology — its own rule table, its own membrane, its own aggregation floor, its own verdict vocabulary. A place is where it happens to meet. It is not a gate. Everyone may talk.
 
 ## Inside the person-graph
 
@@ -197,6 +197,24 @@ This is the answer to the center, for now. The foundation requires no center. A 
 
 The film can show a zoom. The record does not yet store the inner graphs.
 
+## The loop
+
+The parts above are the vocabulary. This section names the cycle they form, so it can be iterated on as one artifact.
+
+**Static layer.** Research, news, politics, norms, and other public sources that already exist and can be cited. This layer does not need federation — OpenAlex is already global. What federates is the derived graph each node extracts from it: claims, flags, axiom-candidates with provenance.
+
+**Person-graph.** A function reads the static layer as its belief-system allows. It attributes. It emits. What settles becomes part of the person-graph. The person is assembled by biology, ideology, habit, inheritance — candidate maps, not a finished inventory. No map is the last map.
+
+**Container.** Repeated exchange between functions grows a container. A sphere is one: a scoped ontology with its own rule table, membrane, aggregation floor, and verdict vocabulary. An institution is another — a container whose belief-system is written as law and whose functions are offices. Same parts. No new type needed.
+
+**Institution-graph.** Institutions rewrite norms. Norms re-enter the static layer. The loop closes. The static layer is not outside the system; it is the system's memory, crystallized from prior passes of this same cycle.
+
+**The function at the center of the loop.** Where slices cross membranes, something sifts and verifies in the instant. It is not a place. It is what the function does at every crossing — and every node can run its own copy. Distributed, not centralized. The sun is a name for the reaction, not a location.
+
+**Federation.** Graphs join without a required hub. What crosses a boundary is a slice: approved extracts, derived claims, flags, axiom-candidates, each with provenance; membrane metadata naming the rules and the handoff-parameter version; a salted commitment binding it to the source set. What never crosses: raw transcripts, identities, blind tokens, individual-level data, anything below the aggregation floor. A display composes slices by aligning on shared entities and rendering both sides of any disagreement. Divergence is data.
+
+**The creation story as microcosm.** This repo was built in a loop between one person and one machine with access to static information. Each conversation produced commits — events with provenance. The next conversation reads what settled. That is the smallest vertical slice of the object: one node, one function, no membrane required because there is only one voice. The membrane earns its existence when two voices must meet without either owning the record.
+
 ## Left open on purpose
 
 - Which candidate map, if any, earns a structural node.
@@ -206,3 +224,5 @@ The film can show a zoom. The record does not yet store the inner graphs.
 - Which containers receive which labels.
 - The local rules of any simulation. The eight lines above are a sketch for the eye, not a program.
 - Further metaphorical names. They enter by a new row, not by mixing into the structural column.
+- Who approves the extracts inside a slice before it crosses a membrane. The direction is per-extract speaker consent; the mechanism is not specified.
+- Whether the continuous-zoom film and the federation short piece are one film or two.
